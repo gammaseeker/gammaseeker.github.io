@@ -30,7 +30,8 @@ a
 	font-family: "COURIER";
 	font-size: 20pt;
 }
-.left {
+.left 
+{
     /*position:absolute;
     left:0; top:300px; bottom: 0;
     width: 178px;
@@ -46,10 +47,20 @@ a
 	font-family: "COURIER";
 	font-size: 20pt;
 }
-
+ul
+{
+	float:left;
+}
 li:hover
 {
 	color: blue;
-	cursor: pointer;
-			
+	cursor: pointer;			
+}
+#content 
+{
+	font-family: ‘Merriweather’, Georgia, serif; 
+	margin-left : 25%;
+	float: left; 
+	text-align: center;
+	margin-right: 25%;
 }
