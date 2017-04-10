@@ -46,10 +46,7 @@ a
 	font-family: "COURIER";
 	font-size: 20pt;
 }
-li
-{
-	color: black;
-}
+
 li:hover
 {
 	color: blue;
