@@ -11,6 +11,10 @@ a
 #accounts
 {
 	text-align: center;
+	border:5px crimson;
+	border-bottom-style: solid;
+	margin:auto;
+	width: 30%;
 }
 .links
 {
