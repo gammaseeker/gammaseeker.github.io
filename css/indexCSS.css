@@ -50,6 +50,7 @@ a
 ul
 {
 	float:left;
+	list-style-position:inside;
 }
 li:hover
 {
