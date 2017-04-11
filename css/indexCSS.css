@@ -100,10 +100,24 @@ span.dropdown
     max-width: 600px; 
     max-height: 600px;
 }
-.dwt
+#dwt
 {
 	height: auto; 
     width: auto; 
     max-width: 600px; 
     max-height: 600px;
+}
+#ce1, #ce2, #ce3
+{
+	height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 600px;
+}
+#gp
+{
+	height: auto; 
+    width: auto; 
+    max-width: 1000px; 
+    max-height: 1000px;
 }
