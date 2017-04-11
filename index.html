@@ -57,11 +57,17 @@ rel=’stylesheet’ type=’text/css’>
 		<h1> A skinny kid with a funny name</h1>
 		<div id = "content"> 
 			<item class = "itm" id = "item-sci" style="display: none"> 
-			The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. I won a 2nd place individual medal in the Wind Power competition. </br>
-			<img id = "sciImg"src = "images/sciOly.jpg"> 
+				The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. I won a 2nd place individual medal in the Wind Power competition. (Winter 2017)</br>
+				<img id = "sciImg"src = "images/sciOly.jpg"> 
 			</item>
-			<item class = "itm" id = "item-ed" style="display: none"> </item>
-			<item class = "itm" id = "item-dwt" style="display: none"> </item>
+			<item class = "itm" id = "item-ed" style="display: none"> 
+				Won the Educator's Award at the CS4All Hackathon for creating a game that supplies the players with the tools necessary to resolve a bullying situation. (Summer 2016).</br>
+				<img class = "cs4All" src = "images/cs4All1.jpg"><img class = "cs4All" src = "images/cs4All2.jpg"><img class = "cs4All" src = "images/cs4All3.jpg"><img class = "cs4All" src = "images/cs4All4.jpg">
+			</item>
+			<item class = "itm" id = "item-dwt" style="display: none"> 
+				New York State Regional Winner for the Do the Write Thing non-violence essay challenge. (Summer 2013).
+				<img id = "dwt" src = "images/dwt.jpg">
+			</item>
 			<item class = "itm" id = "item-coned" style="display: none"> </item>
 			<item class = "itm" id = "item-surp" style="display: none"> </item>
 			<item class = "itm" id = "item-ar" style="display: none"> </item>
@@ -75,8 +81,8 @@ rel=’stylesheet’ type=’text/css’>
 			<span>
 				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
 						<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
-						<span class = "dropdown"> Educator's Award </span>
-						<span class = "dropdown"> Do the Write Thing </span>
+						<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
+						<span class = "dropdown" onclick = "revealContent('item-dwt');"> Do the Write Thing </span>
 				</span></br>
 				<span class = "menu2"> <b>Blog </b></br></span></br>
 				<span class = "menu" onmouseover = "toggleSubMenus(1, 'list-item');" onmouseout = "toggleSubMenus(1, 'none');"> <b>Career</b></br>
