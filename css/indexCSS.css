@@ -46,6 +46,15 @@ a
     margin-left: 0;
 	font-family: "COURIER";
 	font-size: 20pt;
+	
+}
+.menu
+{
+	cursor:pointer;
+}
+.menu2
+{
+	cursor:pointer;
 }
 ul
 {
@@ -67,6 +76,7 @@ li:hover
 }
 span.dropdown
 {
+	font-family: ‘Merriweather’, Georgia, serif; 
 	display: none;
 	cursor:pointer;
 	    /* This has to be "list-item"                                               */
