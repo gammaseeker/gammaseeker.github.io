@@ -2,7 +2,7 @@ h1
 {
 	text-align: center;
 	color: #484141;
-    font-family: "COURIER";
+    font-family: ‘Merriweather’, Georgia, serif; 
 }
 a
 {	
@@ -27,7 +27,7 @@ a
 .links
 {
 	
-	font-family: "COURIER";
+	font-family: ‘Merriweather’, Georgia, serif; 
 	font-size: 20pt;
 }
 .left 
@@ -44,17 +44,19 @@ a
     width: 500px;
     left: 5%;
     margin-left: 0;
-	font-family: "COURIER";
+	font-family: ‘Merriweather’, Georgia, serif; 
 	font-size: 20pt;
 	
 }
 .menu
 {
 	cursor:pointer;
+
 }
 .menu2
 {
 	cursor:pointer;
+  
 }
 ul
 {
