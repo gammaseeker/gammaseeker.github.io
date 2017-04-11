@@ -65,3 +65,11 @@ li:hover
 	text-align: center;
 	margin-right: 25%;
 }
+span.dropdown
+{
+	display: none;
+	cursor:pointer;
+	    /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+}
