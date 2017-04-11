@@ -17,24 +17,8 @@ rel=’stylesheet’ type=’text/css’>
 				boolArr = [];
 			}
 			
-			function toggleSubMenus(parentIdx, toggle, id)
+			function toggleSubMenus(parentIdx, displayValue)
 			{
-				for (var i = 0; i < boolArr.length; i++) {
-					if (boolArr[i] == id) 
-					{
-						toggle = false;
-						boolArr.splice(i,1);
-					}
-				}
-				if(toggle == true)
-				{
-					displayValue = 'list-item'
-					boolArr.push(id);
-				}
-				else
-				{
-					displayValue = 'none';
-				}
 				subList = menuList[parentIdx].getElementsByTagName("span");
 				for (var i =0; i < subList.length; i++)
 					subList[i].style.display = displayValue;
@@ -64,27 +48,29 @@ rel=’stylesheet’ type=’text/css’>
 			Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
 			Sample Text Sample Text Sample Text Sample 
 			Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
+			
+			
 		</div>
 		
 		<div id = "menubox"class="left">
 			<span>
-				<span class = "menu" onclick = "toggleSubMenus(0, true, 'award');"> <b>Awards</b>
+				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
 						<span class = "dropdown"> Science Olympiad </span>
 						<span class = "dropdown"> Educator's Award </span>
 						<span class = "dropdown"> Do the Write Thing </span>
 				</span></br>
-				<span class = "menu2"> <b>Blog </b></span></br>
-				<span class = "menu" onclick = "toggleSubMenus(1, true, 'career');"> <b>Career</b>
-						<span class = "dropdown"> Consolidated Edison </span>
+				<span class = "menu2"> <b>Blog </b></br></span></br>
+				<span class = "menu" onmouseover = "toggleSubMenus(1, 'list-item');" onmouseout = "toggleSubMenus(1, 'none');"> <b>Career</b></br>
+						<span class = "dropdown"> Con Edison </span>
 						<span class = "dropdown"> Surpass Prep Center </span>
 				</span></br>
-				<span class = "menu" onclick = "toggleSubMenus(2, true, 'project');"> <b>Projects </b>
+				<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
 					<span class = "dropdown"> Arduino Traffic Light Simulation </span>
 					<span class = "dropdown"> Drones Google Maps Application </span>
 					<span class = "dropdown"> Double Transposition Cipher </span>
 					<span class = "dropdown"> Web Development Fall Semester Final Project </span>
 				</span></br>
-				<span class = "menu2"> <b>Student </b></span>
+				<span class = "menu2"> <b>Student </b></br></span>
 			</span>
 		</div>
 		
