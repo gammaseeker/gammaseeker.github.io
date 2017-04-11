@@ -57,7 +57,8 @@ rel=’stylesheet’ type=’text/css’>
 		<h1> A skinny kid with a funny name</h1>
 		<div id = "content"> 
 			<item class = "itm" id = "item-sci" style="display: none"> 
-				The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. I won a 2nd place individual medal in the Wind Power competition. (Winter 2017)</br>
+				The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. 
+				I won a 2nd place individual medal in the Wind Power competition. (Winter 2017)</br>
 				<img id = "sciImg"src = "images/sciOly.jpg"> 
 			</item>
 			<item class = "itm" id = "item-ed" style="display: none"> 
@@ -72,7 +73,8 @@ rel=’stylesheet’ type=’text/css’>
 				<img id = "dwt" src = "images/dwt.jpg">
 			</item>
 			<item class = "itm" id = "item-coned" style="display: none"> 
-				I interned at Con Edison over the summer of 2016 and senior year 2017. I created and maintained functional data reports through Tableau. Refer to my blog post about the personal impact this experience had on me.(Summer 2016).</br>
+				I interned at Con Edison over the summer of 2016 and senior year 2017. I created and maintained functional data reports through Tableau. 
+				Refer to my blog post about the personal impact this experience had on me.(Summer 2016).</br>
 				<img id = "ce1" src = "images/conEd.jpg" >
 				<img id = "ce2" src = "images/conEd2.jpg" >
 				<img id = "ce3" src = "images/conEd3.jpg" >
@@ -81,10 +83,19 @@ rel=’stylesheet’ type=’text/css’>
 				I supervised classes of 20-30 middle school students in math and English. (Summer 2014).</br>
 			</item>
 			<item class = "itm" id = "item-ar" style="display: none"> </item>
-			<item class = "itm" id = "item-gmap" style="display: none"> </item>
-			<item class = "itm" id = "item-dtc" style="display: none"> </item>
+			<item class = "itm" id = "item-gmap" style="display: none">
+				The Application I made implements the Google Maps API in order to show the user where it is recommended, legal, semi-legal, 
+				and illegal to fly a drone in certain cities. The code can be found on Github. (Spring 2016).
+				<img id = "gm" src = "images/gm.jpg">
+			</item>
+			<item class = "itm" id = "item-dts" style="display: none"> 
+				When studying cryptography, I created the Double Transposition Cipher in the block language Snap! The project can be found 
+				<a href = "http://snap.berkeley.edu/snapsource/snap.html#present:Username=gammaseeker&ProjectName=Double%20Transposition"> here (Winter 2015).</a>
+				<img id = "dts" src = "images/dts.jpg">
+			</item>
 			<item class = "itm" id = "item-gp" style="display: none"> 
-				Green Planet is the name of the website I created with a friend for our Fall semester final project in our Web Development class. The code can be found <a href = "https://github.com/gammaseeker/Fall-Final-Project-2015">on Github.</a> (Fall 2015).</br>
+				Green Planet is the name of the website I created with a friend for our Fall semester final project in our Web Development class. The code can be found 
+				<a href = "https://github.com/gammaseeker/Fall-Final-Project-2015">on Github.</a> (Fall 2015).</br>
 				<img id = "gp" src = "images/gp.jpg">
 			</item>
 			<item class = "itm" id = "item-std" style="display: none"> </item>
@@ -104,8 +115,8 @@ rel=’stylesheet’ type=’text/css’>
 				</span></br>
 				<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
 					<span class = "dropdown"> Arduino Traffic Light Simulation </span>
-					<span class = "dropdown"> Drones Google Maps Application </span>
-					<span class = "dropdown"> Double Transposition Cipher </span>
+					<span class = "dropdown" onclick = "revealContent('item-gmap');"> Drones Google Maps Application </span>
+					<span class = "dropdown" onclick = "revealContent('item-dts');"> Double Transposition Cipher </span>
 					<span class = "dropdown" onclick = "revealContent('item-gp');"> Green Planet </span>
 				</span></br>
 				<span class = "menu2"> <b>Student </b></br></span>
