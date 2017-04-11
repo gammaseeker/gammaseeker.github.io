@@ -11,7 +11,7 @@ rel=’stylesheet’ type=’text/css’>
 		<script> 
 			function initialize()
 			{
-				
+				itmMaster = document.getElementsByClassName("itm");
 				menuContainerBox = document.getElementById("menubox");
 				menuList = menuContainerBox.getElementsByClassName("menu");
 				boolArr = [];
@@ -23,6 +23,18 @@ rel=’stylesheet’ type=’text/css’>
 				for (var i =0; i < subList.length; i++)
 					subList[i].style.display = displayValue;
 				
+			}
+			function revealContent(contentId)
+			{
+				disableAllItm();
+				document.getElementById(contentId).style.display = "block";
+			}
+			function disableAllItm()
+			{
+				for(var i = 0; i < itmMaster.length; i++)
+				{
+					itmMaster[i].style.display = "none";
+				}
 			}
 		</script>
 	</head>
@@ -43,19 +55,26 @@ rel=’stylesheet’ type=’text/css’>
 		</div>
 		<div id = "split"> </div>
 		<h1> A skinny kid with a funny name</h1>
-		<div id = "content">
-			Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
-			Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
-			Sample Text Sample Text Sample Text Sample 
-			Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
-			
-			
+		<div id = "content"> 
+			<item class = "itm" id = "item-sci" style="display: none"> 
+			The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. I won a 2nd place individual medal in the Wind Power competition. </br>
+			<img id = "sciImg"src = "images/sciOly.jpg"> 
+			</item>
+			<item class = "itm" id = "item-ed" style="display: none"> </item>
+			<item class = "itm" id = "item-dwt" style="display: none"> </item>
+			<item class = "itm" id = "item-coned" style="display: none"> </item>
+			<item class = "itm" id = "item-surp" style="display: none"> </item>
+			<item class = "itm" id = "item-ar" style="display: none"> </item>
+			<item class = "itm" id = "item-gmap" style="display: none"> </item>
+			<item class = "itm" id = "item-dtc" style="display: none"> </item>
+			<item class = "itm" id = "item-gp" style="display: none"> </item>
+			<item class = "itm" id = "item-std" style="display: none"> </item>
 		</div>
 		
 		<div id = "menubox"class="left">
 			<span>
 				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
-						<span class = "dropdown"> Science Olympiad </span>
+						<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
 						<span class = "dropdown"> Educator's Award </span>
 						<span class = "dropdown"> Do the Write Thing </span>
 				</span></br>
@@ -68,7 +87,7 @@ rel=’stylesheet’ type=’text/css’>
 					<span class = "dropdown"> Arduino Traffic Light Simulation </span>
 					<span class = "dropdown"> Drones Google Maps Application </span>
 					<span class = "dropdown"> Double Transposition Cipher </span>
-					<span class = "dropdown"> Web Development Fall Semester Final Project </span>
+					<span class = "dropdown"> Green Planet </span>
 				</span></br>
 				<span class = "menu2"> <b>Student </b></br></span>
 			</span>
