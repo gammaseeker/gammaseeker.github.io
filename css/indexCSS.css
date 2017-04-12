@@ -107,7 +107,7 @@ span.dropdown
     max-width: 600px; 
     max-height: 600px;
 }
-#ce1, #ce2, #ce3
+#ce1, #ce2, #ce3, #ce4
 {
 	height: auto; 
     width: auto; 
@@ -120,4 +120,8 @@ span.dropdown
     width: auto; 
     max-width: 1000px; 
     max-height: 1000px;
+}
+.galleryContainer
+{
+	
 }
