@@ -63,26 +63,39 @@ rel=’stylesheet’ type=’text/css’>
 			</item>
 			<item class = "itm" id = "item-ed" style="display: none"> 
 				Won the Educator's Award at the CS4All Hackathon for creating a game that supplies the players with the tools necessary to resolve a bullying situation. (Summer 2016).</br>
-				<img class = "cs4All" src = "images/cs4All1.jpg">
-				<img class = "cs4All" src = "images/cs4All2.jpg">
-				<img class = "cs4All" src = "images/cs4All3.jpg">
-				<img class = "cs4All" src = "images/cs4All4.jpg">
+				<div class = "galleryContainer" id = "cs4AllContainer">
+					<img class = "cs4All" src = "images/cs4All1.jpg">
+					<img class = "cs4All" src = "images/cs4All2.jpg">
+					<img class = "cs4All" src = "images/cs4All3.jpg">
+					<img class = "cs4All" src = "images/cs4All4.jpg">
+				</div>
+				
+				
 			</item>
 			<item class = "itm" id = "item-dwt" style="display: none"> 
 				New York State Regional Winner for the Do the Write Thing non-violence essay challenge. (Summer 2013).</br>
-				<img id = "dwt" src = "images/dwt.jpg">
+				<div class = "galleryContainer">
+					<img id = "dwt" src = "images/dwt.jpg">
+					<img id = "dwt" src = "images/dwt2.jpg">
+				</div>
+				
 			</item>
 			<item class = "itm" id = "item-coned" style="display: none"> 
 				I interned at Con Edison over the summer of 2016 and senior year 2017. I created and maintained functional data reports through Tableau. 
 				Refer to my blog post about the personal impact this experience had on me.(Summer 2016).</br>
-				<img id = "ce1" src = "images/conEd.jpg" >
-				<img id = "ce2" src = "images/conEd2.jpg" >
-				<img id = "ce3" src = "images/conEd3.jpg" >
+				<div class = "galleryContainer">
+					<img id = "ce1" src = "images/conEd.jpg" >
+					<img id = "ce2" src = "images/conEd2.jpg" >
+					<img id = "ce3" src = "images/conEd3.jpg" >
+				</div>
+				
 			</item>
 			<item class = "itm" id = "item-surp" style="display: none"> 
 				I supervised classes of 20-30 middle school students in math and English. (Summer 2014).</br>
 			</item>
-			<item class = "itm" id = "item-ar" style="display: none"> </item>
+			<item class = "itm" id = "item-ar" style="display: none">
+				I am currently learning how to use an Arduino. The Traffic Light Simulator will be my first project showcasing my skills with an Arduino.
+			</item>
 			<item class = "itm" id = "item-gmap" style="display: none">
 				The Application I made implements the Google Maps API in order to show the user where it is recommended, legal, semi-legal, 
 				and illegal to fly a drone in certain cities. The code can be found on Github. (Spring 2016).
@@ -90,7 +103,7 @@ rel=’stylesheet’ type=’text/css’>
 			</item>
 			<item class = "itm" id = "item-dts" style="display: none"> 
 				When studying cryptography, I created the Double Transposition Cipher in the block language Snap! The project can be found 
-				<a href = "http://snap.berkeley.edu/snapsource/snap.html#present:Username=gammaseeker&ProjectName=Double%20Transposition"> here (Winter 2015).</a>
+				<a href = "http://snap.berkeley.edu/snapsource/snap.html#present:Username=gammaseeker&ProjectName=Double%20Transposition"> here.</a> (Winter 2015). </br>
 				<img id = "dts" src = "images/dts.jpg">
 			</item>
 			<item class = "itm" id = "item-gp" style="display: none"> 
@@ -98,7 +111,12 @@ rel=’stylesheet’ type=’text/css’>
 				<a href = "https://github.com/gammaseeker/Fall-Final-Project-2015">on Github.</a> (Fall 2015).</br>
 				<img id = "gp" src = "images/gp.jpg">
 			</item>
-			<item class = "itm" id = "item-std" style="display: none"> </item>
+			<item class = "itm" id = "item-std" style="display: none"> 
+				I am currently a senior at Brooklyn Technical High School in the Software Engineering Major. I aspire to major in Computer Science. 
+				To assist my journey I have taken Web Development, AP Computer Science Principles, Database SQL, AP BC Calculus and AP Computer Science Java.</br>
+				<img id = "ce4" src = "images/conEd4.jpg" >
+			
+			</item>
 		</div>
 		
 		<div id = "menubox"class="left">
@@ -114,12 +132,12 @@ rel=’stylesheet’ type=’text/css’>
 						<span class = "dropdown" onclick = "revealContent('item-surp');"> Surpass Prep Center </span>
 				</span></br>
 				<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
-					<span class = "dropdown"> Arduino Traffic Light Simulation </span>
+					<span class = "dropdown" onclick = "revealContent('item-ar');"> Arduino Traffic Light Simulation </span>
 					<span class = "dropdown" onclick = "revealContent('item-gmap');"> Drones Google Maps Application </span>
 					<span class = "dropdown" onclick = "revealContent('item-dts');"> Double Transposition Cipher </span>
 					<span class = "dropdown" onclick = "revealContent('item-gp');"> Green Planet </span>
 				</span></br>
-				<span class = "menu2"> <b>Student </b></br></span>
+				<span class = "menu2" onclick = "revealContent('item-std');"> <b>Student </b></br></span>
 			</span>
 		</div>
 		
