@@ -120,11 +120,14 @@ rel=’stylesheet’ type=’text/css’>
 				<img id = "ce4" src = "images/conEd4.jpg" >
 			
 			</item>
+			<item id = "item-reset" style="display: none">
+			
+			</item>
 		</div>
 		<div>
 		<div id = "menubox"class="left">
 			<span>
-				<img class = "btn" src = "images/thumbnail.png">
+				<img onclick = "revealContent('item-reset');" class = "btn" src = "images/thumbnail.png">
 				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
 						<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
 						<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
