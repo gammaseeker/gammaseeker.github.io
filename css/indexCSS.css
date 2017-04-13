@@ -92,7 +92,8 @@ a
 .menu
 {
 	cursor:pointer;
-
+	display: block;
+	
 }
 .menu2
 {
