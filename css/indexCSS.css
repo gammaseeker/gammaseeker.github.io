@@ -1,5 +1,4 @@
 html{min-height:100%;position:relative;}
-
 .backgroundMain
 {
 	position: fixed;
@@ -24,6 +23,7 @@ h1
 a
 {	
     text-decoration: none;
+	color: inherit; 
 }
 #accounts
 {
