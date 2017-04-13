@@ -1,4 +1,17 @@
 .title
 {
+	text-align: left;
 	font-weight; bold;
+}
+p
+{
+	color: #ebebeb;
+}
+.contentSplit
+{
+	width: 700px;
+    height: 1px;
+    /*background-color: 	#1a1a1a;*/
+	background-color: #ebebeb;
+   text-align:left;
 }
