@@ -38,24 +38,26 @@ rel=’stylesheet’ type=’text/css’>
 			}
 		</script>
 	</head>
-	<body onload = "initialize();">
-		<img class = "backgroundMain" id = "main" src = "background/footsteps.png">	
-		<h1 id = "header"> Joey Jiemjitpolchai </h1>
-		<div id = "accounts"> 
-			
-				<span class = "links"> || </span>
-				<a href = "https://github.com/gammaseeker" class = "links"> Code </a> 
-				<span class = "links"> || </span>
-			
-				<a href = "https://www.linkedin.com/in/joey-j-703686125/" class = "links"> Linkedin</a>
+	<body onload = "initialize();" style = "height: 100%;">
+		<img class = "backgroundMain" id = "main" src = "background/black.jpg">	
+		<div id = "top">
+			<h1 id = "header"> Joey Jiemjitpolchai </h1>
+			<div id = "accounts"> 
 				
-				<span class = "links"> || </span>
-		  
-				<span class = "links"> jjiemjitpolchai9540@bths.edu </span>
-			
+					<span class = "links"> || </span>
+					<a href = "https://github.com/gammaseeker" class = "links"> Code </a> 
+					<span class = "links"> || </span>
+				
+					<a href = "https://www.linkedin.com/in/joey-j-703686125/" class = "links"> Linkedin</a>
+					
+					<span class = "links"> || </span>
+			  
+					<div id = "email"class = "links"> jjiemjitpolchai9540@bths.edu </div>
+				
+			</div>
+			<div id = "split"> </div>
+			<h1> A skinny kid with a funny name</h1>
 		</div>
-		<div id = "split"> </div>
-		<h1> A skinny kid with a funny name</h1>
 		<div id = "content"> 
 			<item class = "itm" id = "item-sci" style="display: none"> 
 				The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. 
@@ -119,9 +121,10 @@ rel=’stylesheet’ type=’text/css’>
 			
 			</item>
 		</div>
-		
+		<div>
 		<div id = "menubox"class="left">
 			<span>
+				<img class = "btn" src = "images/thumbnail.png">
 				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
 						<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
 						<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
@@ -140,6 +143,7 @@ rel=’stylesheet’ type=’text/css’>
 				</span></br>
 				<span class = "menu2" onclick = "revealContent('item-std');"> <b>Student </b></br></span>
 			</span>
+		</div>
 		</div>
 		
 	</body>
