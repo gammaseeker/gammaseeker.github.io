@@ -40,18 +40,40 @@ rel=’stylesheet’ type=’text/css’>
 	</head>
 	<body onload = "initialize();" style = "height: 100%;">
 		<img class = "backgroundMain" id = "main" src = "background/black.jpg">	
+		<div id = "containLeft">
+			<div id = "menubox"class="left">
+				<span>
+					<img onclick = "revealContent('item-reset');" class = "btn" src = "images/thumbnail.png">
+					<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
+							<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
+							<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
+							<span class = "dropdown" onclick = "revealContent('item-dwt');"> Do the Write Thing </span>
+					</span></br>
+					<a id = "blog" href = "blog.html">	<span class = "menu2"> <b>Blog </b></br></span></br></a>
+					<span class = "menu" onmouseover = "toggleSubMenus(1, 'list-item');" onmouseout = "toggleSubMenus(1, 'none');"> <b>Career</b></br>
+							<span class = "dropdown" onclick = "revealContent('item-coned');"> Con Edison </span>
+							<span class = "dropdown" onclick = "revealContent('item-surp');"> Surpass Prep Center </span>
+					</span></br>
+					<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
+						<span class = "dropdown" onclick = "revealContent('item-ar');"> Arduino Traffic Light Simulation </span>
+						<span class = "dropdown" onclick = "revealContent('item-gmap');"> Drones Google Maps Application </span>
+						<span class = "dropdown" onclick = "revealContent('item-dts');"> Double Transposition Cipher </span>
+						<span class = "dropdown" onclick = "revealContent('item-gp');"> Green Planet </span>
+					</span></br>
+					<span class = "menu2" onclick = "revealContent('item-std');"> <b>Student </b></br></span>
+				</span>
+			</div>
+		</div>
 		<div id = "top">
 			<h1 id = "header"> Joey Jiemjitpolchai </h1>
-			<div id = "accounts"> 
+			<div id = "accounts">
+					<div id = "containLinks">
+						<a href = "https://github.com/gammaseeker" id = "code" class = "links"> Code </a> 
+					
 				
+						<a href = "https://www.linkedin.com/in/joey-j-703686125/" id = "linkedin" class = "links"> Linkedin</a>
+					</div>
 					
-					<a href = "https://github.com/gammaseeker" id = "code" class = "links"> Code </a> 
-					
-				
-					<a href = "https://www.linkedin.com/in/joey-j-703686125/" id = "linkedin" class = "links"> Linkedin</a>
-					
-					
-			  
 					<div id = "email"class = "links"> jjiemjitpolchai9540@bths.edu </div>
 				
 			</div>
@@ -124,30 +146,7 @@ rel=’stylesheet’ type=’text/css’>
 			
 			</item>
 		</div>
-		<div>
-		<div id = "menubox"class="left">
-			<span>
-				<img onclick = "revealContent('item-reset');" class = "btn" src = "images/thumbnail.png">
-				<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
-						<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
-						<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
-						<span class = "dropdown" onclick = "revealContent('item-dwt');"> Do the Write Thing </span>
-				</span></br>
-				<a id = "blog" href = "blog.html">	<span class = "menu2"> <b>Blog </b></br></span></br></a>
-				<span class = "menu" onmouseover = "toggleSubMenus(1, 'list-item');" onmouseout = "toggleSubMenus(1, 'none');"> <b>Career</b></br>
-						<span class = "dropdown" onclick = "revealContent('item-coned');"> Con Edison </span>
-						<span class = "dropdown" onclick = "revealContent('item-surp');"> Surpass Prep Center </span>
-				</span></br>
-				<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
-					<span class = "dropdown" onclick = "revealContent('item-ar');"> Arduino Traffic Light Simulation </span>
-					<span class = "dropdown" onclick = "revealContent('item-gmap');"> Drones Google Maps Application </span>
-					<span class = "dropdown" onclick = "revealContent('item-dts');"> Double Transposition Cipher </span>
-					<span class = "dropdown" onclick = "revealContent('item-gp');"> Green Planet </span>
-				</span></br>
-				<span class = "menu2" onclick = "revealContent('item-std');"> <b>Student </b></br></span>
-			</span>
-		</div>
-		</div>
+		
 		
 	</body>
 	
