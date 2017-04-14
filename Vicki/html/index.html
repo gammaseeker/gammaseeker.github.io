@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Happy Birthday Vicki! </title>
+		<link type = "text/css" rel = "stylesheet" href = "css/index.css" />
+		<style> </style>
+		<script>
+			function initialize()
+			{
+				tardisAudioElement = document.getElementById("tardisAudio");
+				headerElement = document.getElementById("header");
+			}
+			function tardisNoiseOn()
+			{
+				tardisAudioElement.play();
+				headerElement.innerHTML = "Allons-y!";
+			}
+			function tardisNoiseOff()
+			{
+				tardisAudioElement.pause();
+				headerElement.innerHTML = "Happy Birthday Vicki";
+			}
+
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+		<h1 id = "header"> Happy Birthday Vicki</h1>
+		<img class = "backgroundImg" src = "images/backgroundVicki.jpg"> 
+		<a href = "main.html">	
+			<img onmouseover = "tardisNoiseOn();" onmouseout = "tardisNoiseOff();" id = "tardis" src = "images/tardis.png">
+		</a>
+		<audio id ="tardisAudio" loop>
+			<source src="audio/tardis.mp3" type ="audio/mpeg">
+		</audio>
+	</body>
+	
+</html>

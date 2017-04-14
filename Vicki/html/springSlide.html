@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Blossom new life</title>
+		<link type = "text/css" rel = "stylesheet" href = "css/allSlide.css" />
+		<style> </style>
+		<script>
+			function initialize()
+			{
+				BACK1 = 0, BACK2 = 1, BACK3 = 2, BACK4 = 3, BACK5 = 4;
+				HOVER = 1, OFF = 0;
+				mainBack = document.getElementById("main");
+				springBack1 = document.getElementById("springBackgroundMain1");
+				springBack2 = document.getElementById("springBackgroundMain2");
+				springBack3 = document.getElementById("springBackgroundMain3");
+				springBack4 = document.getElementById("springBackgroundMain4");
+				springBack5 = document.getElementById("springBackgroundMain5");
+				springMenu1 = document.getElementById("springBackground1");
+				springMenu2 = document.getElementById("springBackground2");
+				springMenu3 = document.getElementById("springBackground3");
+				springMenu4 = document.getElementById("springBackground4");
+				springMenu5 = document.getElementById("springBackground5");
+				
+			}
+			function displayBackground(selector)
+			{
+				if(selector == BACK1)
+				{
+					mainBack.style.opacity = "0";
+					springBack1.style.opacity = "1";
+					springBack2.style.opacity = "0";
+					springBack3.style.opacity = "0";
+					springBack4.style.opacity = "0";
+					springBack5.style.opacity = "0";
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";
+				}
+				if(selector == BACK2)
+				{
+					mainBack.style.opacity = "0";
+					springBack1.style.opacity = "0";
+					springBack2.style.opacity = "1";
+					springBack3.style.opacity = "0";
+					springBack4.style.opacity = "0";
+					springBack5.style.opacity = "0";
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";				
+				}
+				if(selector == BACK3)
+				{
+					mainBack.style.opacity = "0";
+					springBack1.style.opacity = "0";
+					springBack2.style.opacity = "0";
+					springBack3.style.opacity = "1";
+					springBack4.style.opacity = "0";
+					springBack5.style.opacity = "0";
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";			
+				}
+				if(selector == BACK4)
+				{
+					mainBack.style.opacity = "0";
+					springBack1.style.opacity = "0";
+					springBack2.style.opacity = "0";
+					springBack3.style.opacity = "0";
+					springBack4.style.opacity = "1";
+					springBack5.style.opacity = "0";
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";			
+				}
+				if(selector == BACK5)
+				{
+					mainBack.style.opacity = "0";
+					springBack1.style.opacity = "0";
+					springBack2.style.opacity = "0";
+					springBack3.style.opacity = "0";
+					springBack4.style.opacity = "0";
+					springBack5.style.opacity = "1";
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";			
+				}
+			}
+			function hoverMenu(bool)
+			{
+				if(bool == HOVER)
+				{
+					springMenu1.style.opacity = "1";
+					springMenu2.style.opacity = "1";
+					springMenu3.style.opacity = "1";
+					springMenu4.style.opacity = "1";
+					springMenu5.style.opacity = "1";	
+				}
+				if(bool == OFF)
+				{
+					springMenu1.style.opacity = "0.07";
+					springMenu2.style.opacity = "0.07";
+					springMenu3.style.opacity = "0.07";
+					springMenu4.style.opacity = "0.07";
+					springMenu5.style.opacity = "0.07";	
+				}
+			}
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+			<img class = "backgroundMain" id = "main" src = "images/springWonderland.gif">
+			<img class = "backgroundSlideMain" id = "springBackgroundMain1" src = "images/spring1.jpg">
+			<img class = "backgroundSlideMain" id = "springBackgroundMain2" src = "images/spring2.jpg">
+			<img class = "backgroundSlideMain" id = "springBackgroundMain3" src = "images/spring3.jpg">
+			<img class = "backgroundSlideMain" id = "springBackgroundMain4" src = "images/spring4.jpg">
+			<img class = "backgroundSlideMain" id = "springBackgroundMain5" src = "images/spring5.jpg">
+		<div class = "slideShowContainer" id = "slideshowSpring">
+			<img class = "backgroundSlide" id = "springBackground1" src = "images/spring1.jpg" onclick = "displayBackground(BACK1);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "springBackground2" src = "images/spring2.jpg" onclick = "displayBackground(BACK2);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "springBackground3" src = "images/spring3.jpg" onclick = "displayBackground(BACK3);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "springBackground4" src = "images/spring4.jpg" onclick = "displayBackground(BACK4);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "springBackground5" src = "images/spring5.jpg" onclick = "displayBackground(BACK5);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+		</div>
+	</body>
+	
+</html>

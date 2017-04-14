@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Summer is here</title>
+		<link type = "text/css" rel = "stylesheet" href = "css/allSlide.css" />
+		<style> </style>
+		<script>
+			function initialize()
+			{
+				BACK1 = 0, BACK2 = 1, BACK3 = 2, BACK4 = 3, BACK5 = 4, BACK6 = 5;
+				HOVER = 1, OFF = 0;
+				mainBack = document.getElementById("main");
+				summerBack1 = document.getElementById("summerBackgroundMain1");
+				summerBack2 = document.getElementById("summerBackgroundMain2");
+				summerBack3 = document.getElementById("summerBackgroundMain3");
+				summerBack4 = document.getElementById("summerBackgroundMain4");
+				summerBack5 = document.getElementById("summerBackgroundMain5");
+				summerBack6 = document.getElementById("summerBackgroundMain6");
+				summerMenu1 = document.getElementById("summerBackground1");
+				summerMenu2 = document.getElementById("summerBackground2");
+				summerMenu3 = document.getElementById("summerBackground3");
+				summerMenu4 = document.getElementById("summerBackground4");
+				summerMenu5 = document.getElementById("summerBackground5");
+				summerMenu6 = document.getElementById("summerBackground6");
+				
+			}
+			function displayBackground(selector)
+			{
+				if(selector == BACK1)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "1";
+					summerBack2.style.opacity = "0";
+					summerBack3.style.opacity = "0";
+					summerBack4.style.opacity = "0";
+					summerBack5.style.opacity = "0";
+					summerBack6.style.opacity = "0";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";
+					summerMenu6.style.opacity = "0.07";
+				}
+				if(selector == BACK2)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "0";
+					summerBack2.style.opacity = "1";
+					summerBack3.style.opacity = "0";
+					summerBack4.style.opacity = "0";
+					summerBack5.style.opacity = "0";
+					summerBack6.style.opacity = "0";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";		
+					summerMenu6.style.opacity = "0.07";					
+				}
+				if(selector == BACK3)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "0";
+					summerBack2.style.opacity = "0";
+					summerBack3.style.opacity = "1";
+					summerBack4.style.opacity = "0";
+					summerBack5.style.opacity = "0";
+					summerBack6.style.opacity = "0";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";	
+					summerMenu6.style.opacity = "0.07";
+				}
+				if(selector == BACK4)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "0";
+					summerBack2.style.opacity = "0";
+					summerBack3.style.opacity = "0";
+					summerBack4.style.opacity = "1";
+					summerBack5.style.opacity = "0";
+					summerBack6.style.opacity = "0";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";	
+					summerMenu6.style.opacity = "0.07";					
+				}
+				if(selector == BACK5)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "0";
+					summerBack2.style.opacity = "0";
+					summerBack3.style.opacity = "0";
+					summerBack4.style.opacity = "0";
+					summerBack5.style.opacity = "1";
+					summerBack6.style.opacity = "0";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";			
+					summerMenu6.style.opacity = "0.07";
+				}
+				if(selector == BACK6)
+				{
+					mainBack.style.opacity = "0";
+					summerBack1.style.opacity = "0";
+					summerBack2.style.opacity = "0";
+					summerBack3.style.opacity = "0";
+					summerBack4.style.opacity = "0";
+					summerBack5.style.opacity = "0";
+					summerBack6.style.opacity = "1";
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";			
+					summerMenu6.style.opacity = "0.07";				
+				}
+			}
+			function hoverMenu(bool)
+			{
+				if(bool == HOVER)
+				{
+					summerMenu1.style.opacity = "1";
+					summerMenu2.style.opacity = "1";
+					summerMenu3.style.opacity = "1";
+					summerMenu4.style.opacity = "1";
+					summerMenu5.style.opacity = "1";	
+					summerMenu6.style.opacity = "1";		
+				}
+				if(bool == OFF)
+				{
+					summerMenu1.style.opacity = "0.07";
+					summerMenu2.style.opacity = "0.07";
+					summerMenu3.style.opacity = "0.07";
+					summerMenu4.style.opacity = "0.07";
+					summerMenu5.style.opacity = "0.07";	
+					summerMenu6.style.opacity = "0.07";		
+				}
+			}
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+			<img class = "backgroundMain" id = "main" src = "images/gardenBack.gif">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain1" src = "images/summer1.jpg">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain2" src = "images/summer2.jpg">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain3" src = "images/summer3.jpg">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain4" src = "images/summer4.jpg">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain5" src = "images/summer5.jpg">
+			<img class = "backgroundSlideMain" id = "summerBackgroundMain6" src = "images/summer6.jpg">
+		<div class = "slideShowContainer" id = "slideshowSummer">
+			<img class = "backgroundSlide" id = "summerBackground1" src = "images/summer1.jpg" onclick = "displayBackground(BACK1);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "summerBackground2" src = "images/summer2.jpg" onclick = "displayBackground(BACK2);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "summerBackground3" src = "images/summer3.jpg" onclick = "displayBackground(BACK3);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "summerBackground4" src = "images/summer4.jpg" onclick = "displayBackground(BACK4);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "summerBackground5" src = "images/summer5.jpg" onclick = "displayBackground(BACK5);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "summerBackground6" src = "images/summer6.jpg" onclick = "displayBackground(BACK6);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+		</div>
+	</body>
+	
+</html>
