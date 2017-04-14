@@ -30,13 +30,16 @@ a
 	text-align: center;
 	/*border:3px crimson;
 	border-bottom-style: solid;*/
-	margin:auto;
+	margin:0 auto;
 	width: 28%;
-	
+}
+#email, #codeDiv, #linkedinDiv
+{
+	text-align:center;
 }
 #split
 {
-	width: 700px;
+	width: 80%;
     height: 1px;
     /*background-color: 	#1a1a1a;*/
 	background-color: #ebebeb;
