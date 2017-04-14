@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> </title>
+		<link type = "text/css" rel = "stylesheet" href = "css/Maps.css" />
+		<style></style>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script> 
+			function initialize() 
+			{ 
+				MUJI = 0, MET = 1, MOF = 2, SBS = 3, MONH = 4, GGC = 5;
+				
+				TIMESQUARE = 0, FIFTHAVENUE = 1, COOPERSQUARE = 2, CHELSEA = 3, SOHO = 4, DOWNTOWN = 5, WASHINGTONSQUARE = 6;
+				
+				
+			
+				branchCol = document.getElementById("containBranch");
+				branchButtonElement = document.getElementsByClassName("branchButton");
+				branchButtonElement2 = document.getElementsByClassName("branchButton2");
+				mujiBack1 = document.getElementById("mujiBackground1");
+				mujiBack2 = document.getElementById("mujiBackground2");
+				mujiBack3 = document.getElementById("mujiBackground3");
+				mujiBack4 = document.getElementById("mujiBackground4");
+				mujiBack5 = document.getElementById("mujiBackground5");
+				metBack1 = document.getElementById("metBackground1");
+				metBack2 = document.getElementById("metBackground2");
+				metBack3 = document.getElementById("metBackground3");
+				mofBack1 = document.getElementById("mofBackground1");
+				mofBack2 = document.getElementById("mofBackground2");
+				mofBack3 = document.getElementById("mofBackground3");
+				mofBack4 = document.getElementById("mofBackground4");
+				sbsBack1 = document.getElementById("sbsBackground1"); 
+				sbsBack2 = document.getElementById("sbsBackground2");
+				sbsBack3 = document.getElementById("sbsBackground3");
+				sbsBack4 = document.getElementById("sbsBackground4");
+				sbsBack5 = document.getElementById("sbsBackground5");
+				mohBack1 = document.getElementById("monhBackground1");
+				mohBack2 = document.getElementById("monhBackground2");
+				mohBack3 = document.getElementById("monhBackground3");
+				mohBack4 = document.getElementById("monhBackground4");
+				mohBack5 = document.getElementById("monhBackground5");
+				mohBack6 = document.getElementById("monhBackground6");
+				mohBack7 = document.getElementById("monhBackground7");
+				mohBack8 = document.getElementById("monhBackground8");
+				ggcBack1 = document.getElementById("ggcBackground1");
+				ggcBack2 = document.getElementById("ggcBackground2");
+				ggcBack3 = document.getElementById("ggcBackground3");
+				initialBack = document.getElementById("nyc");
+				head = document.getElementById("title");
+				
+			  var mapProp = 
+			  {
+				center:new google.maps.LatLng(40.7518796,-73.9815121),
+				zoom:12,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			function inject(location, branch)
+			{
+				
+				head.style.visibility = "hidden";
+				var lat = 0;
+				var lng = 0;
+				if(location ==MUJI)
+				{	
+					var ctr = parseInt(Math.random() * 5) + 1;
+					sourceString = "mujiBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";
+					
+					
+					if(branch == TIMESQUARE)
+					{
+						lat = 40.755748;
+						lng = -73.989480;
+					}
+					if(branch == FIFTHAVENUE) 
+					{
+						lat = 40.752500;
+						lng = -73.981152;
+
+					}
+					if(branch ==COOPERSQUARE)
+					{
+						lat = 40.728876;
+						lng = -73.991288;					
+					}
+					if(branch ==CHELSEA)
+					{
+						lat = 40.739316;
+						lng = -73.992587;					
+					}
+					if(branch ==SOHO)
+					{
+						lat = 40.720772;
+						lng =  -74.001074;					
+					}
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+				}
+				if(location == MONH)
+				{
+					var ctr = parseInt(Math.random() * 8) + 1;
+					sourceString = "monhBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";					
+					lat = 40.781552 ;
+					lng = -73.974010;
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					resetBranch();
+				}
+				if(location == MET)
+				{	
+					var ctr = parseInt(Math.random() * 3) + 1;
+					sourceString = "metBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";
+					
+					lat = 40.779495 ;
+					lng = -73.963252;
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					resetBranch();
+				}
+				if(location == MOF)
+				{
+					var ctr = parseInt(Math.random() * 4) + 1;
+					sourceString = "mofBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";				
+					lat = 40.713092;
+					lng = -74.015165;
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);	
+					resetBranch();					
+				}
+				if(location == SBS)
+				{
+					var ctr = parseInt(Math.random() * 5) + 1;
+					sourceString = "sbsBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";					
+					lat = 40.733218;
+					lng = -73.990671;
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					resetBranch();
+				}
+				if(location == GGC)
+				{
+					var ctr = parseInt(Math.random() * 3) + 1;
+					sourceString = "ggcBackground" + ctr;
+					getDoc = document.getElementById(sourceString);
+					resetAllOpacity();
+					getDoc.style.opacity = "1";					
+					if(branch == TIMESQUARE)
+					{
+						lat = 40.754696;
+						lng = -73.991125;
+					}
+					if(branch == DOWNTOWN)
+					{
+						lat = 40.709878;
+						lng = -74.009090;
+					}
+					if(branch == WASHINGTONSQUARE)
+					{
+						lat = 40.729501;
+						lng = -73.999012;
+					}
+					if(branch == CHELSEA)
+					{
+						lat= 40.741146;
+						lng = -73.996624;
+					}
+					var mapProp = 
+					{
+						center:new google.maps.LatLng(lat,lng),
+						zoom:18,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);	
+				}				
+			}
+			google.maps.event.addDomListener(window, 'click', inject);
+			function displayMujiBranch()
+			{
+				branchCol.style.visibility = "visible";
+				for(var i = 0; i < branchButtonElement.length; i++)
+				{
+					branchButtonElement[i].style.display = "inline-block";
+				}
+				
+			}
+			function resetBranch()
+			{
+				branchCol.style.visibility = "hidden";
+				for(var i = 0; i < branchButtonElement.length; i++)
+				{
+					branchButtonElement[i].style.display = "none";
+				}				
+				for(var i = 0; i < branchButtonElement2.length; i++)
+				{
+					branchButtonElement2[i].style.display = "none";
+				}
+			}
+			function displayGGCBranch()
+			{
+				branchCol.style.visibility = "visible";
+				for(var i = 0; i < branchButtonElement2.length; i++)
+				{
+					branchButtonElement2[i].style.display = "inline-block";
+				}
+			}
+			function resetAllOpacity()
+			{
+				initialBack.style.opacity = "0";
+				mujiBack1.style.opacity = "0";
+				mujiBack2.style.opacity = "0";
+				mujiBack3.style.opacity = "0";
+				mujiBack4.style.opacity = "0";
+				mujiBack5.style.opacity = "0";
+				mofBack1.style.opacity = "0";
+				mofBack2.style.opacity = "0";
+				mofBack3.style.opacity = "0";
+				mofBack4.style.opacity = "0";
+				metBack1.style.opacity = "0";
+				metBack2.style.opacity = "0";
+				metBack3.style.opacity = "0";
+				sbsBack1.style.opacity = "0";
+				sbsBack2.style.opacity = "0";
+				sbsBack3.style.opacity = "0";
+				sbsBack4.style.opacity = "0";
+				sbsBack5.style.opacity = "0";
+				mohBack1.style.opacity = "0";
+				mohBack2.style.opacity = "0";
+				mohBack3.style.opacity = "0";
+				mohBack4.style.opacity = "0";
+				mohBack5.style.opacity = "0";
+				mohBack6.style.opacity = "0";
+				mohBack7.style.opacity = "0";
+				mohBack8.style.opacity = "0";
+				ggcBack1.style.opacity = "0";
+				ggcBack2.style.opacity = "0";
+				ggcBack3.style.opacity = "0";
+			}
+			
+		</script>
+	</head>
+	<body> 
+		<img class = "backgroundMain" id = "nyc" src = "images/mapBackground1.jpg"> 
+		<img class = "background" id = "mujiBackground1" src = "images/Muji1.jpg">
+		<img class = "background" id = "mujiBackground2" src = "images/Muji2.jpg">
+		<img class = "background" id = "mujiBackground3" src = "images/Muji3.jpg">
+		<img class = "background" id = "mujiBackground4" src = "images/Muji4.png">
+		<img class = "background" id = "mujiBackground5" src = "images/Muji5.jpg">
+		<img class = "background" id = "metBackground1" src = "images/met1.jpg">
+		<img class = "background" id = "metBackground2" src = "images/met2.jpg">
+		<img class = "background" id = "metBackground3" src = "images/met3.jpg">
+		<img class = "background" id = "mofBackground1" src = "images/mof1.jpg">
+		<img class = "background" id = "mofBackground2" src = "images/mof2.jpg">
+		<img class = "background" id = "mofBackground3" src = "images/mof3.png">
+		<img class = "background" id = "mofBackground4" src = "images/mof4.jpg">
+		<img class = "background" id = "sbsBackground1" src = "images/sbs1.jpg">
+		<img class = "background" id = "sbsBackground2" src = "images/sbs2.jpg">	
+		<img class = "background" id = "sbsBackground3" src = "images/sbs3.jpg">	
+		<img class = "background" id = "sbsBackground4" src = "images/sbs4.jpg">	
+		<img class = "background" id = "sbsBackground5" src = "images/sbs5.jpg">	
+		<img class = "background" id = "monhBackground1" src = "images/moh1.jpg">
+		<img class = "background" id = "monhBackground2" src = "images/moh2.jpg">
+		<img class = "background" id = "monhBackground3" src = "images/moh3.jpg">
+		<img class = "background" id = "monhBackground4" src = "images/moh4.jpg">
+		<img class = "background" id = "monhBackground5" src = "images/moh5.jpg">
+		<img class = "background" id = "monhBackground6" src = "images/moh6.jpg">
+		<img class = "background" id = "monhBackground7" src = "images/moh7.png">
+		<img class = "background" id = "monhBackground8" src = "images/moh8.jpg">
+		<img class = "background" id = "ggcBackground1" src = "images/ggc1.jpg">
+		<img class = "background" id = "ggcBackground2" src = "images/ggc2.jpg">
+		<img class = "background" id = "ggcBackground3" src = "images/ggc3.jpg">
+		<h1 id = "title" class = "overTop"><span><img class = "backimg" src = "images/innerback.png">Are you Ready to Explore?</span></h1>
+		<table>
+			<colgroup>
+				<col>
+				<col>
+				<col>
+			</colgroup>
+			<tr>
+				<th> <h1> Map </h1>
+				</th>
+				<th> <h1> Places</h1>
+				</th>
+				<th id = "info"> 
+					<h1 class = "colHead">Branches </h1>
+				<th>
+			</tr>
+			<tr>
+				<td id = "map"rowspan = "1000"><div id= "googleMap" style="width:500px;height:380px;"></div></td>
+				<td><button class = "places" onclick = "resetBranch(); displayMujiBranch();"> Muji </button> </td>
+				<td class = "branch" rowspan = "1000">
+					<div id = "containBranch">
+						<button class = "branchButton" onclick = "inject(MUJI, TIMESQUARE);"> Times Square </button> </br>
+						<button class = "branchButton" onclick = "inject(MUJI, FIFTHAVENUE);"> Fifth Avenue </button> </br>
+						<button class = "branchButton" onclick = "inject(MUJI, COOPERSQUARE);"> Cooper Square </button> </br>
+						<button class = "branchButton" onclick = "inject(MUJI, CHELSEA);"> Chelsea </button> </br>
+						<button class = "branchButton" onclick = "inject(MUJI, SOHO);"> SOHO </button> </br>
+						<button class = "branchButton2" onclick = "inject(GGC, TIMESQUARE);"> Times Square </button> </br>
+						<button class = "branchButton2" onclick = "inject(GGC, WASHINGTONSQUARE);"> Washington Square </button> </br>
+						<button class = "branchButton2" onclick = "inject(GGC, CHELSEA);"> Chelsea </button> </br>
+						<button class = "branchButton2" onclick = "inject(GGC, DOWNTOWN);"> Downtown </button>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><button class = "places" onclick = "inject(MET);"> Metropolitan Museum of Art </button></td>
+			</tr>
+			<tr>
+				<td> <button onclick = "inject(MOF);"> Museum of Feelings</button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick = "inject(SBS);"> Strand Book Store </button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick = "inject(MONH);"> Museum of Natural History</button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick = "resetBranch(); displayGGCBranch();"> Go Go Curry</button></td>
+			</tr>
+		</table>
+		<a href = "main.html">	
+			<img id = "tardis" src = "images/tardis.png">
+		</a>
+	</body>
+	
+</html>
