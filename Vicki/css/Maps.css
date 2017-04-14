@@ -1,0 +1,140 @@
+.backgroundMain
+{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+	z-index: -999;	
+}
+.background
+{
+	position: fixed;
+    top: -2px;
+    left: -2px;
+    height: 102%;
+    width: 102%;
+	z-index: -999;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+#head
+{
+	visibility:visible;
+}
+#nyc
+{
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+#mujiBackground1
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+	
+}
+#mujiBackground2
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+#tardis
+{
+	height: 5%;
+	width: 5%;
+	transition: width 1s, height 1s;
+	-webkit-transition: width 2s, height 2s;
+}
+#tardis:hover
+{
+	width: 6%;
+	height: 6%;
+	cursor: pointer;
+}
+
+.overTop
+{
+	text-align:center;
+	
+}
+.branchButton
+{
+	display:none;					
+}
+.branchButton2
+{
+	display:none;
+	
+}
+#containBranch
+{
+	visibility:hidden;
+}
+table
+{
+	margin:auto;
+	width: 75%;
+	text-align:center;
+	border:18px outset cornflowerblue;
+	background-color: rgba(78, 97, 114, 0.75);
+	border-radius: 20px;
+}
+
+#map
+{
+	width:20%;
+}
+.col
+{
+	display:inline-block;
+	width:45%;
+	vertical-align:middle;
+}
+.info
+{
+	text-align: right;
+	position: absolute;
+	bottom: 30%;
+	right: 5%;
+	
+}
+#container
+{
+	position:relative;
+	width:80%;
+	text-align:center;
+	margin:auto;
+}
+img.backimg
+{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-999;
+}
+div img.backimg, span img.backimg
+{
+	opacity:0.7;
+	border:thin solid darkgrey;
+	border-radius:22px;
+}
+
+h1 span
+{
+	position:relative;
+	padding:2px 8px;
+}

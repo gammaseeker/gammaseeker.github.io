@@ -1,0 +1,46 @@
+.backgroundSlide
+{
+
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .3s;
+	border-style:solid;
+	border-width:thick; 
+	border-color:#adbce6;
+	cursor: pointer;
+}
+.slideShowContainer
+{
+	text-align:center;
+	margin-top: 8%;
+}
+.backgroundMain
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -999;	
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .3s;
+}
+.backgroundSlideMain
+{
+	opacity:0;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .3s;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -998;	
+}
