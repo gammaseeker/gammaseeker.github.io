@@ -55,7 +55,7 @@ a
 	
     border-radius: 12px 24px;
 	color: #ebebeb;
-	width: 50%;
+	width: 40%;
 	margin: auto;
 }
 .left 
@@ -74,7 +74,8 @@ a
     right:0;
     overflow:hidden;
    
-    width: 400px;
+    /*width: 400px;*/
+	width: 20%;
 	height: 100%;
     /*left: 2%;*/
     margin-left: 0;
