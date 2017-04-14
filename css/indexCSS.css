@@ -13,6 +13,7 @@ html{min-height:100%;position:relative;}
 	transition-timing-function: ease;
 	transition-delay: .3s;
 }
+
 h1
 {
 	text-align: center;
@@ -187,6 +188,9 @@ span.dropdown
 item
 {
 	color: #ebebeb;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 #blog
 {
