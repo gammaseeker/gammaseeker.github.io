@@ -2,13 +2,12 @@
 <!-- Joey Jiemjitpolchai -->
 <html> 
 	<head> 
-		<title>Alpha Story Board </title>
+		<title>Damon's Story Board </title>
 		<link type = "text/css" rel = "stylesheet" href = "css/index.css" />
 		<style></style>
 		<script src = "js/index.js"></script>
 	</head>
 	<body onload = "initialize();"> 
-		<!-- <img class = "backgroundMain" id = "main" src = "images/black.jpg">	 -->
 		<div>
 			<a href = "index.html">
 				<img id = "logo" src = "images/thumbnail.png">
@@ -25,7 +24,7 @@
 				<li> <a href = "brian.html" class = "btn brian"> Brian </a> </li>
 				
 			</ul>
-		</div>
+        </div>
 		<div id = "colContainer">
 			<div id = "todo" class = "workCol">
 				To Do Column
@@ -39,10 +38,11 @@
 			<div id = "prod" class = "workCol">
 				Production Column
 			</div>
-			<div id = "completed" class = "workCol">
+			<div id = "completed" class = "workCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 				Completed Column
 			</div>
-		</div>
+        </div>
+        <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);">
 	</body>
 	
 </html>
