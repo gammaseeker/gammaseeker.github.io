@@ -8,10 +8,6 @@ html{min-height:100%;position:relative;}
 	width: 100%;
 	z-index: -999;	
 	opacity: 1;
-	transition-property: opacity;
-	transition-duration: 1s;
-	transition-timing-function: ease;
-	transition-delay: .3s;
 }
 
 h1
