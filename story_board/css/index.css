@@ -1,13 +1,29 @@
 html, body
 {
     height: 100%;
+    background-color: #C0C0C0;
+    text-align: center;
 }
+
+/* .backgroundMain
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -999;	
+	opacity: 1;
+} */
 
 h1
 {
     font: 36pt tahoma;
     color: #2C3E50;
-	
+    /* color: #ebebeb; */
+    display: inline-block;
+    margin: 0 auto;
+
 }
 
 /* body
@@ -24,7 +40,8 @@ h1
 {
     width: 70%;
     padding: 12px 24px;
-    background-color:orange;
+    /* background-color:orange; */
+    background-color:#a3c1ad;
     border-radius: 20px;
     margin: auto;
 }
@@ -65,7 +82,19 @@ li
 #colContainer
 {
     margin-left: 11%;
-   
+}
+
+#logo
+{
+    height: auto; 
+    width: auto; 
+	max-width: 10%; 
+    max-height: 10%;
+    /* display: inline-block;
+    position: relative;
+    left: 8%; */
+    align:left;
+    vertical-align: center;
 }
 
 .btn
