@@ -25,22 +25,40 @@
 			</ul>
         </div>
 		<div id = "colContainer">
-			<div id = "todo" class = "workCol">
-				To Do Column
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" class = "workCol">
+					Completed Column
+				</div>
 			</div>
-			<div id = "progress" class = "workCol">
-				In Progress Column
+			<div class = "subRow">
+				<div class = "subCol">
+					Test
+                </div>
+                <div class = "subCol">
+					Test
+                </div>
+                <div class = "subCol">
+					Test
+                </div>
+                <div class = "subCol">
+					Test
+                </div>
+                <div id = "end" class = "subCol">
+					Test
+				</div>
 			</div>
-			<div id = "review" class = "workCol">
-				Peer Review Column
-			</div>
-			<div id = "prod" class = "workCol">
-				Production Column
-			</div>
-			<div id = "completed" class = "workCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
-				Completed Column
-			</div>
-        </div>
         <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);">
 	</body>
 	

@@ -67,16 +67,25 @@ li
 
 .workCol
 {
-    border: 3px solid black;
+    border: 1px solid black;
     border-right: none;
     float: left;
     width: 18%;
     
 }
 
-#completed
+.subCol
 {
-    border-right: 3px solid black;
+    margin-top: 1%;
+    border: 1px solid black;
+    border-right: none;
+    float: left;
+    width: 18%;    
+}
+
+#completed, #end
+{
+    border-right: 1px solid black;
 }
 
 #colContainer
