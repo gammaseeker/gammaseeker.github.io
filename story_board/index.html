@@ -8,23 +8,244 @@
 		<script src = "js/index.js"></script>
 	</head>
 	<body onload = "initialize();"> 
-		<!-- <img class = "backgroundMain" id = "main" src = "images/black.jpg">	 -->
-		<div>
-			<a href = "index.html">
-				<img id = "logo" src = "images/thumbnail.png">
-			</a>
+		<div onclick = "revealContent('reset')">
+			<img id = "logo" src = "images/thumbnail.png">
 			<h1> Agile Story Board</h1>
 		</div>
 		<hr>
 		<div class = "menubar">
 			<ul class = "menulist">
-				<li> <a href = "joey.html" class = "btn joey"> Joey </a> </li>
-				<li> <a href = "hans.html" class = "btn hans"> Hans </a> </li>
-				<li> <a href = "damon.html" class = "btn damon"> Damon </a> </li>
-				<li> <a href = "farhan.html" class = "btn farhan"> Farhan </a> </li>
-				<li> <a href = "brian.html" class = "btn brian"> Brian </a> </li>
-				<li> <a href = "zhen.html" class = "btn zhen"> Zhen </a> </li>				
+				<li class = "joey" onclick = "revealContent('joeyCol')"> Joey </li>
+				<li class = "hans" onclick = "revealContent('hansCol')"> Hans </li>
+				<li class = "damon" onclick = "revealContent('damonCol')"> Damon </li>
+				<li class = "farhan" onclick = "revealContent('farhanCol')"> Farhan </li>
+				<li class = "brian" onclick = "revealContent('brianCol')"> Brian </li>
+				<li class = "zhen" onclick = "revealContent('zhenCol')"> Zhen </li>
 			</ul>
+        </div>
+		<div id = "joeyCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Remake story board to one html page </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		
+		<div id = "hansCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Hans Test </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		
+		<div id = "damonCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Damon Test </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		
+		<div id = "farhanCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Farhan Test </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		
+		<div id = "brianCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Brian Test </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		<div id = "zhenCol" class = "colContainer" style= "display: none">
+			<div class = "headRow">
+				<div id = "todo" class = "workCol">
+					To Do Column
+				</div>
+				<div id = "progress" class = "workCol">
+					In Progress Column
+				</div>
+				<div id = "review" class = "workCol">
+					Peer Review Column
+				</div>
+				<div id = "prod" class = "workCol">
+					Production Column
+				</div>
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
+					Completed Column
+				</div>
+			</div>
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> Zhen Test </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+                </div>
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
+		
+		<div id = "reset" class = "colContainer" style="display: none">
+
 		</div>
 	</body>
 	
