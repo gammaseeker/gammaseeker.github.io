@@ -1,0 +1,110 @@
+html, body
+{
+    height: 100%;
+}
+
+h1
+{
+    font: 36pt tahoma;
+    color: #2C3E50;
+	
+}
+
+/* body
+{
+     height: 90vh; 
+}  */
+
+.menubar, h1
+{
+	text-align: center;
+}
+
+.menulist
+{
+    width: 70%;
+    padding: 12px 24px;
+    background-color:orange;
+    border-radius: 20px;
+    margin: auto;
+}
+
+div > .menu
+{
+    text-align: center;
+}
+
+ul > li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+li
+{
+    font: bold 18pt verdana;
+    letter-spacing: -3px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.workCol
+{
+    border: 3px solid black;
+    border-right: none;
+    float: left;
+    width: 18%;
+    
+}
+
+#completed
+{
+    border-right: 3px solid black;
+}
+
+#colContainer
+{
+    margin-left: 11%;
+   
+}
+
+.btn
+{
+    /* font: bold 18pt verdana;
+    letter-spacing: -3px;
+    margin-left: 10px; */
+    text-decoration: none;
+}
+
+li > a
+{
+    color: black;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.joey:hover
+{
+    color:gray;
+}
+
+.hans:hover
+{
+    color:gray;
+}
+
+.damon:hover
+{
+    color:gray;
+}
+
+.farhan:hover
+{
+    color:gray;
+}
+
+.brian:hover
+{
+    color:gray;
+}
