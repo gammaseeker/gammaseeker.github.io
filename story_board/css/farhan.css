@@ -5,16 +5,18 @@ html, body
     text-align: center;
 }
 
-/* .backgroundMain
+.subRow
 {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: -999;	
-	opacity: 1;
-} */
+    position: absolute;
+    top: 35%;
+    width: 88%;
+    height:100%;
+}
+
+.tick
+{
+    background-color: #476481;
+}
 
 h1
 {
@@ -63,6 +65,35 @@ li
     letter-spacing: -3px;
     margin-left: 30px;
     text-decoration: none;
+}
+
+.workCol
+{
+    border: 1px solid black;
+    border-right: none;
+    float: left;
+    width: 18%;
+    
+}
+
+.subCol
+{
+    margin-top: 1%;
+    border: 1px solid black;
+    border-right: none;
+    float: left;
+    width: 18%;    
+    height: 100%;
+}
+
+#completed, #end
+{
+    border-right: 1px solid black;
+}
+
+#colContainer
+{
+    margin-left: 11%;
 }
 
 #logo

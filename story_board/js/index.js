@@ -3,7 +3,7 @@ function initialize(){
 }
 
 function startDrag(e){
-    e.dataTransfer.setData("source", e.target.src); 
+    e.dataTransfer.setData("Text", e.target.id); 
 }
 
 function allowDrag(e){
@@ -12,8 +12,6 @@ function allowDrag(e){
 
 function dropElement(e){
     e.preventDefault();
-    var imgSrc = e.dataTransfer.getData("source");
-    var newImg = document.createElement("img");
-    newImg.src = imgSrc;
-    e.target.appendChild(newImg);
+    var data = e.dataTransfer.getData("Text");
+    e.target.appendChild(document.getElementById(data));
 }

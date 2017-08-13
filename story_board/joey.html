@@ -3,7 +3,7 @@
 <html> 
 	<head> 
 		<title>Joey's Story Board </title>
-		<link type = "text/css" rel = "stylesheet" href = "css/index.css" />
+		<link type = "text/css" rel = "stylesheet" href = "css/joey.css" />
 		<style></style>
 		<script src = "js/index.js"></script>
 	</head>
@@ -38,28 +38,29 @@
 				<div id = "prod" class = "workCol">
 					Production Column
 				</div>
-				<div id = "completed" class = "workCol">
+				<div id = "completed" ondrop="dropElement(event);" ondragover = "allowDrag(event);" class = "workCol">
 					Completed Column
 				</div>
 			</div>
 			<div class = "subRow">
-				<div class = "subCol">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<!-- <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);"> -->
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> This is a ticket </span>
+                </div>
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 					Test
                 </div>
-                <div class = "subCol">
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 					Test
                 </div>
-                <div class = "subCol">
+                <div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 					Test
                 </div>
-                <div class = "subCol">
-					Test
-                </div>
-                <div id = "end" class = "subCol">
+                <div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 					Test
 				</div>
 			</div>
-        <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);">
+        </div>
 	</body>
 	
 </html>

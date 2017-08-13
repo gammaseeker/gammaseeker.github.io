@@ -3,7 +3,7 @@
 <html> 
 	<head> 
 		<title>Damon's Story Board </title>
-		<link type = "text/css" rel = "stylesheet" href = "css/index.css" />
+		<link type = "text/css" rel = "stylesheet" href = "css/damon.css" />
 		<style></style>
 		<script src = "js/index.js"></script>
 	</head>
@@ -41,8 +41,26 @@
 			<div id = "completed" class = "workCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
 				Completed Column
 			</div>
-        </div>
-        <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);">
+		
+			<div class = "subRow">
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					<!-- <img src = "images/test.png" draggable="true" ondragstart="startDrag(event);"> -->
+					<span id = "tick1" class = "tick" draggable="true" ondragstart="startDrag(event);"> This is a ticket </span>
+				</div>
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+				<div class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+				<div id = "end" class = "subCol" ondrop="dropElement(event);" ondragover = "allowDrag(event);">
+					Test
+				</div>
+			</div>
+		</div>
 	</body>
 	
 </html>
