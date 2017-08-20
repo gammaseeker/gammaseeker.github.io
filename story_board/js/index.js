@@ -1,5 +1,38 @@
+$(handleDragStop);
+$(init);
+
+function init() {
+    $('.tick').draggable({
+        containment: '.subRow',
+        cursor: 'move',
+        snap: '.subCol',
+        stop: function(event, ui){
+            var currentPos = $('#makeMeDraggable').position();
+            Cookies.set('position', currentPos.top );
+            alert(Cookies.get('position'));
+            handleDragStop(event, ui);
+        }
+    });
+}
+
+function handleDragStop(event, ui) {
+    var offsetXPos = parseInt( ui.offset.left );
+    var offsetYPos = parseInt( ui.offset.top );
+    $Cookies.set('location', {x: offsetXPos, y: offsetYPos});
+}
+
 function initialize(){
+
+    database = firebase.database();
+
     colMaster = document.getElementsByClassName("colContainer");   
+
+}
+
+function writeData(){
+    firebase.database().ref().set({
+
+    });
 }
 
 function revealContent(contentId){
