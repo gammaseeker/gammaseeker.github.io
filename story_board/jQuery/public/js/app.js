@@ -43,3 +43,27 @@
              liRemoved.remove();
          });
 }());
+
+ $( init );  
+function init() {
+  $('#makeMeDraggable').draggable({
+        //containment: 'body',
+        cursor: 'move',
+        stop: function() {
+            var currentPos = $(this).position();
+            Cookies.set('top', currentPos.top);
+            Cookies.set('left', currentPos.left)
+            
+            
+        }
+ });
+}
+
+function save() {
+    var savedPosition = Cookies.get('top');
+    var savedLeft = Cookies.get('left');
+    alert('Top: ' + savedPosition + ' Left: ' + savedLeft);
+    value = savedPosition + 'px';
+    value2 = savedLeft + 'px';
+    $(this).css({ 'top': value, 'left': value2 });           
+}
