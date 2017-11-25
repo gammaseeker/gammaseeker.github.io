@@ -120,6 +120,21 @@ span.dropdown
     max-width: 600px; 
     max-height: 600px;
 }
+
+#awardWrapper
+{
+	/*border: 5px solid red;*/
+	margin-left: 30%;
+	display: block;
+}
+#awdImg
+{
+	height: auto; 
+    width: auto; 
+    max-width: 600px; 
+	max-height: 600px;
+	margin-left: 10%;
+}
 .cs4All
 {
 	height: auto; 
