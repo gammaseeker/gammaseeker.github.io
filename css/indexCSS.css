@@ -81,6 +81,10 @@ h1
 	display: block;
 	
 }
+b:hover
+{
+	color: #ebebeba1;
+}
 .menu2
 {
 	cursor:pointer;
@@ -106,12 +110,18 @@ li:hover
 }
 span.dropdown
 {
-	font-size: 16pt;
+	font-size: 14pt;
 	font-family: ‘Merriweather’, Georgia, serif; 
 	display: none;
 	cursor:pointer;
     list-style-type: disc;       
-    list-style-position: inside;
+	list-style-position: inside;
+	text-align: left;
+	margin-left: 30%; 
+}
+span.dropdown:hover
+{
+	color: #ebebeba1;
 }
 #sciImg, .bb, #awdImg, #dts
 {
