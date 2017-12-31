@@ -29,6 +29,14 @@ h1
 {
 	text-align:center;
 }
+#codeDiv:hover
+{
+	color: #ebebeba1;
+}
+#linkedinDiv:hover
+{
+	color: #ebebeba1;
+}
 #split
 {
 	width: 80%;
