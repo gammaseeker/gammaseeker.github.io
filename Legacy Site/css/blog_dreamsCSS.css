@@ -1,0 +1,34 @@
+.title
+{
+	text-align: left;
+}
+p
+{
+	color: #ebebeb;
+	font-size: 18px;
+}
+.contentSplit
+{
+	width: 700px;
+    height: 1px;
+    /*background-color: 	#1a1a1a;*/
+	background-color: #ebebeb;
+   text-align:left;
+}
+.boldSpan
+{
+	font-weight: bold;
+}
+.readMore
+{
+	color: #2c3e50;
+	font-size: 20px;
+	font-weight: bold;
+}
+.back
+{
+	font-family: ‘Merriweather’, Georgia, serif; 
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+}
