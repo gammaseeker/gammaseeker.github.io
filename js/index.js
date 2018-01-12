@@ -19,11 +19,12 @@ function unclickedLinkedin(){
 	linked.src = "images/LinkedIn/unclicked.png";
 }
 
-// $(document).ready(function(){
-//     $(".fade-in-up").on('load', function(){
-//         $(".fade-in-up").slideUp();
-//     });
-// });
+$(document).ready(function(){
+	var w = $('#htmlIcon').css('width');
+	var h = $('#htmlIcon').css('height');
+	$('.skillIcons').css('width', w);
+	$('.skillIcons').css('height', h);
+});
 
 $('.smooth').on('click', function() {
     $.smoothScroll({
