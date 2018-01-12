@@ -20,6 +20,19 @@ body
     background: #ebebeb;
 }
 
+#lineAbout
+{
+      width: 100pt;
+      height: 3pt;
+      display: block;
+      background: #ebebeb;
+}
+
+#aboutContent
+{
+      padding-top: 20px;
+}
+
 #theNav
 {
     display: none;
