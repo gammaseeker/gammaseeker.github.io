@@ -90,7 +90,14 @@ h2
 
 #github, #linkedin
 {
+      height: 200px;
+      width: 200px;
       transition: all 0.2s;
+}
+
+#github
+{
+      margin-left: 40%;
 }
 
 #pfp
@@ -175,4 +182,9 @@ h2
       {
             bottom: 150px;
       }
+}
+
+#msg
+{
+      height: 100px;
 }
