@@ -1,0 +1,89 @@
+#header
+{
+    text-align: center;
+    font-family: ‘Merriweather’, Georgia, serif;
+    color: #ebebeb;
+    font-size: 40pt;
+}
+
+#line
+{
+    margin: 11pt auto;
+    width: 100pt;
+    height: 3pt;
+    text-align: center;
+    display: block;
+    background: #ebebeb;
+}
+
+#theNav
+{
+    display: none;
+}
+
+#background1
+{
+    z-index: -2;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 100%;
+    height: 1000px;
+}
+
+#background2
+{
+    z-index: -2;
+    position: absolute;
+    top: 1000px;
+    left:0px;
+    width: 100%;
+    height: 1000px;
+}
+
+#background3
+{
+    z-index: -2;
+    position: absolute;
+    top: 2000px;
+    left:0px;
+    width: 100%;
+    height: 1000px;
+}
+
+#background4
+{
+    z-index: -2;
+    position: absolute;
+    top: 3000px;
+    left:0px;
+    width: 100%;
+    height: 1100px;
+}
+h2
+{
+    text-align: center;
+    font-family: ‘Merriweather’, Georgia, serif;
+    color: #ebebeb;
+    font-size: 24pt;
+}
+
+.page
+{
+    height: 1000px;
+}
+
+.title, .content
+{
+      color:#ebebeb;
+}
+
+#github, #linkedin
+{
+      transition: all 0.2s;
+}
+
+#pfp
+{
+      border-radius: 50%;
+}
