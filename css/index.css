@@ -105,12 +105,14 @@ h2
       width: 500px;
       height: 500px;
       border-radius: 50%;
+
 }
 
 .row
 {
-      margin-top: 3%;
-      margin-left: 30%;
+      /* margin-top: 3%;
+      margin-left: 30%; */
+      margin-left: 15%;
 }
 
 
@@ -121,8 +123,7 @@ h2
 
 .wrap
 {
-      position: absolute;
-      bottom: 20%;
+      position: relative;
       animation-name: up;
       animation-duration: 1.0s;
       -webkit-animation-name: up;
@@ -165,22 +166,22 @@ h2
 {
       from
       {
-            bottom: 0%;
+            bottom: -20%;
       }
       to
       {
-            bottom: 20%;
+            bottom: 0%;
       }
 }
 
 @-webkit-keyframes up{
       from
       {
-            bottom: 0%;
+            bottom: -20%;
       }
       to
       {
-            bottom: 20%;
+            bottom: 0%;
       }
 }
 
