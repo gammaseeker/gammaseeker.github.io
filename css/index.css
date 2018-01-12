@@ -114,6 +114,11 @@ h2
       margin-left: 40%;
 }
 
+#github:hover, #linkedin:hover
+{
+      cursor: pointer;
+}
+
 #pfp
 {
       width: 500px;
