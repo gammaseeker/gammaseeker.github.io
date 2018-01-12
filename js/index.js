@@ -19,6 +19,12 @@ function unclickedLinkedin(){
 	linked.src = "images/LinkedIn/unclicked.png";
 }
 
+// $(document).ready(function(){
+//     $(".fade-in-up").on('load', function(){
+//         $(".fade-in-up").slideUp();
+//     });
+// });
+
 $('.smooth').on('click', function() {
     $.smoothScroll({
         scrollElement: $('body'),

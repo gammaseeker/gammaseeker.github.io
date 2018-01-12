@@ -3,9 +3,10 @@
 <html>
         <head>
 		<title> Joey Jiemjitpolchai </title>
-            <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+
             <meta charset="UTF-8">
             <link href=’https://fonts.googleapis.com/css?family=Merriweather&#8217; rel=’stylesheet’ type=’text/css’>
+            <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
             <link type = "text/css" rel = "stylesheet" href = "css/index.css" />
             <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -40,14 +41,18 @@
     <div id="page1" class = "page">
       <a id="about" class="smooth"></a>
       <img id = "background1" src = "background/black.jpg">
-      <div class="container">
-            <h1 id = "header"> Joey Jiemjitpolchai </h1>
-            <span id ="line"></span>
-            <h2>Enthusiastic Software Engineer</h2>
+
+      <div class="wrap">
+            <div class="container">
+                  <h1 id = "header" class="fade-in-up"> Joey Jiemjitpolchai </h1>
+                  <span id ="line" class="fade-in-up"></span>
+                  <h2 class="fade-in-up">Enthusiastic Software Engineer</h2>
+            </div>
+
             <div class="row">
-                  <div class="col-lg-6">
-                        <h1 class = "title">About Me</h1>
-                        <div class = "content">
+                  <div class="col-lg-4">
+                        <h1 class = "title fade-in-up">About Me</h1>
+                        <div class = "content fade-in-up">
                               I am a freshman majoring in computer science at Stony Brook University. I will be interning at Bloomberg as a software engineer for the summer of 2018.
                               My interests in computer science are machine learning, data structures, and robotics. I began my journey in CS in my junior year of high school,
                               and since then I have been adamant about continuing to study this field. My experience as a software engineer for Bloomberg in summer 2017 further confirmed
@@ -55,10 +60,11 @@
                         </div>
                   </div>
                   <div class="col-lg-6">
-                        <img id="pfp" src="images/pfp.jpg" />
+                        <img id="pfp" class="fade-in-up" src="images/pfp.jpg" />
                   </div>
             </div>
       </div>
+
     </div>
 
     <div id="page2" class = "page">
