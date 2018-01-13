@@ -1,6 +1,8 @@
 function initialize(){
 	github = document.getElementById("github");
 	linked = document.getElementById("linkedin");
+	gp = document.getElementById("gp");
+	gm = document.getElementById("gm");
 }
 
 function clickedGithub(){
@@ -17,6 +19,26 @@ function clickedLinkedin(){
 
 function unclickedLinkedin(){
 	linked.src = "images/LinkedIn/unclicked.png";
+}
+
+function fadeGp()
+{
+	gp.style.opacity = 0.5;
+}
+
+function fadeGm()
+{
+	gm.style.opacity = 0.5;
+}
+
+function fillGp()
+{
+	gp.style.opacity = 1;
+}
+
+function fillGm()
+{
+	gm.style.opacity = 1;
 }
 
 $(document).ready(function(){

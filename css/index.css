@@ -238,6 +238,19 @@ h2
       margin-left: 10%;
 }
 
+.project
+{
+      width: 100%;
+      height: 370px;
+      padding: 20px;
+      transition: all 0.5s;
+}
+
+.project:hover
+{
+      cursor: pointer;
+}
+
 #msg
 {
       height: 100px;
