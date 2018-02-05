@@ -41,12 +41,12 @@ function fillGm()
 	gm.style.opacity = 1;
 }
 
-$(document).ready(function(){
-	var w = $('#htmlIcon').css('width');
-	var h = $('#htmlIcon').css('height');
-	$('.skillIcons').css('width', w);
-	$('.skillIcons').css('height', h);
-});
+// $(document).ready(function(){
+// 	var w = $('#htmlIcon').css('width');
+// 	var h = $('#htmlIcon').css('height');
+// 	$('.skillIcons').css('width', w);
+// 	$('.skillIcons').css('height', h);
+// });
 
 $('.smooth').on('click', function() {
     $.smoothScroll({

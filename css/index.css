@@ -222,15 +222,17 @@ h2
 
 .skillIcons
 {
-      height: 434px;
-      width: 434px;
+      /* height: 230px;
+      width: 230px; */
+      height: 60%;
+      width: 60%;
 }
 
-.javaIcon
+/* .javaIcon
 {
       height: 250px;
       width: 250px;
-}
+} */
 
 .col-lg-2
 {
