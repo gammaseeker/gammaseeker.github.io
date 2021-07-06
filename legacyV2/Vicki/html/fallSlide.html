@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Leaves from the Vine Falling so Slow</title>
+		<link type = "text/css" rel = "stylesheet" href = "css/allSlide.css" />
+		<style> </style>
+		<script>
+			function initialize()
+			{
+				BACK1 = 0, BACK2 = 1, BACK3 = 2, BACK4 = 3, BACK5 = 4;
+				HOVER = 1, OFF = 0;
+				mainBack = document.getElementById("main");
+				fallBack1 = document.getElementById("fallBackgroundMain1");
+				fallBack2 = document.getElementById("fallBackgroundMain2");
+				fallBack3 = document.getElementById("fallBackgroundMain3");
+				fallBack4 = document.getElementById("fallBackgroundMain4");
+				fallBack5 = document.getElementById("fallBackgroundMain5");
+				fallMenu1 = document.getElementById("fallBackground1");
+				fallMenu2 = document.getElementById("fallBackground2");
+				fallMenu3 = document.getElementById("fallBackground3");
+				fallMenu4 = document.getElementById("fallBackground4");
+				fallMenu5 = document.getElementById("fallBackground5");
+				
+			}
+			function displayBackground(selector)
+			{
+				if(selector == BACK1)
+				{
+					mainBack.style.opacity = "0";
+					fallBack1.style.opacity = "1";
+					fallBack2.style.opacity = "0";
+					fallBack3.style.opacity = "0";
+					fallBack4.style.opacity = "0";
+					fallBack5.style.opacity = "0";
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";
+				}
+				if(selector == BACK2)
+				{
+					mainBack.style.opacity = "0";
+					fallBack1.style.opacity = "0";
+					fallBack2.style.opacity = "1";
+					fallBack3.style.opacity = "0";
+					fallBack4.style.opacity = "0";
+					fallBack5.style.opacity = "0";
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";		
+				}
+				if(selector == BACK3)
+				{
+					mainBack.style.opacity = "0";
+					fallBack1.style.opacity = "0";
+					fallBack2.style.opacity = "0";
+					fallBack3.style.opacity = "1";
+					fallBack4.style.opacity = "0";
+					fallBack5.style.opacity = "0";
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";	
+				}
+				if(selector == BACK4)
+				{
+					mainBack.style.opacity = "0";
+					fallBack1.style.opacity = "0";
+					fallBack2.style.opacity = "0";
+					fallBack3.style.opacity = "0";
+					fallBack4.style.opacity = "1";
+					fallBack5.style.opacity = "0";
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";		
+				}
+				if(selector == BACK5)
+				{
+					mainBack.style.opacity = "0";
+					fallBack1.style.opacity = "0";
+					fallBack2.style.opacity = "0";
+					fallBack3.style.opacity = "0";
+					fallBack4.style.opacity = "0";
+					fallBack5.style.opacity = "1";
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";		
+				}
+			}
+			function hoverMenu(bool)
+			{
+				if(bool == HOVER)
+				{
+					fallMenu1.style.opacity = "1";
+					fallMenu2.style.opacity = "1";
+					fallMenu3.style.opacity = "1";
+					fallMenu4.style.opacity = "1";
+					fallMenu5.style.opacity = "1";	
+				}
+				if(bool == OFF)
+				{
+					fallMenu1.style.opacity = "0.07";
+					fallMenu2.style.opacity = "0.07";
+					fallMenu3.style.opacity = "0.07";
+					fallMenu4.style.opacity = "0.07";
+					fallMenu5.style.opacity = "0.07";	
+				}
+			}
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+		<img class = "backgroundMain" id = "main" src = "images/fallWonderland3.jpg">
+			<img class = "backgroundSlideMain" id = "fallBackgroundMain1" src = "images/fall1.jpg">
+			<img class = "backgroundSlideMain" id = "fallBackgroundMain2" src = "images/fall2.jpg">
+			<img class = "backgroundSlideMain" id = "fallBackgroundMain3" src = "images/fall3.jpg">
+			<img class = "backgroundSlideMain" id = "fallBackgroundMain4" src = "images/fall4.jpg">
+			<img class = "backgroundSlideMain" id = "fallBackgroundMain5" src = "images/fall5.jpg">
+		<div class = "slideShowContainer" id = "slideshowFall">
+			<img class = "backgroundSlide" id = "fallBackground1" src = "images/fall1.jpg" onclick = "displayBackground(BACK1);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "fallBackground2" src = "images/fall2.jpg" onclick = "displayBackground(BACK2);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "fallBackground3" src = "images/fall3.jpg" onclick = "displayBackground(BACK3);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "fallBackground4" src = "images/fall4.jpg" onclick = "displayBackground(BACK4);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+			<img class = "backgroundSlide" id = "fallBackground5" src = "images/fall5.jpg" onclick = "displayBackground(BACK5);" onmouseover = "hoverMenu(HOVER);" onmouseout = "hoverMenu(OFF);" width = "200" height = "200">
+		</div>
+	</body>
+	
+</html>

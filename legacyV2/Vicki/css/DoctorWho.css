@@ -1,0 +1,241 @@
+.mainBackground
+{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+	z-index: -999;	
+}
+#gallifreyBackground
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#blueBackground1
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;	
+}
+#blueBackground2
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#blueBackground3
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#blueBackground4
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#blueBackground5
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#blueBackground6
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground1
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground2
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground3
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground4
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground5
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#purpleBackground6
+{
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;		
+}
+#initial
+{
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+#tardis
+{
+	/*border-style:solid;
+	border-width:thin;
+	border-color:green;*/
+	height: 5%;
+	width: 5%;
+	margin-top: 20%;
+	margin-left:55%;
+	transition: width 1s, height 1s;
+	-webkit-transition: width 2s, height 2s;
+	-webkit-transform: rotate(17deg); /* Chrome, Safari, Opera */
+    transform: rotate(17deg);
+	display: initial;
+}
+#tardis:hover
+{
+	width: 6%;
+	height: 6%;
+	cursor: pointer;
+}
+#tardis2
+{
+	height: 10%;
+	width: 10%;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+	/*margin-top: 40%;
+	margin-left: 3%;*/
+}
+tardis2:hover
+{
+	cursor: pointer;
+}
+#container
+{
+	/*border-style:solid;
+	border-width:thin;
+	border-color:green;*/
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);		
+}
+.planets
+{
+	position: fixed;
+	top: 60%;
+	left: 30%;
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+	display: initial;
+	/*height: 5%;
+	width: 5%;	
+	margin-top: 5%;
+	margin-left: 30%; 
+	border-style:solid;
+	border-width:thin;
+	border-color:green;*/
+}
+.planets:hover
+{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#galaxyPurple
+{
+	position: fixed;
+	top: 5%;
+	left: 3%;
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+	display: initial;
+}
+#galaxyPurple:hover
+{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+#galaxyBlue
+{
+	position: fixed;
+	top: 5%;
+	left: 65%;	
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+	display: initial;
+}
+#galaxyBlue:hover
+{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.box
+{
+	
+	position:fixed;
+	bottom: 0 ;
+	right: 0;
+}
+#end
+{
+	display:none;
+}
+#container2
+{
+	position:fixed;
+	bottom:0;
+	left: 0;
+}

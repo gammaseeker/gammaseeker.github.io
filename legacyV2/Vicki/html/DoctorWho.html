@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> The Universe </title>
+		<link type = "text/css" rel = "stylesheet" href = "css/DoctorWho.css" />
+		<style> </style>
+		<script>
+			function initialize() //see all images in one galaxy
+			{
+				libraryAudioElement = document.getElementById("libraryAudio");
+				gallifreyPlanet = document.getElementById("gallifreyImage");
+				galaxyB = document.getElementById("galaxyBlue");
+				galaxyP = document.getElementById("galaxyPurple");
+				tardisHome = document.getElementById("tardis");
+				startBack = document.getElementById("initial");
+				gallifreyBack = document.getElementById("gallifreyBackground");
+				tardisAudioElement = document.getElementById("tardisAudio");
+				stopTardis = document.getElementById("end");
+				tardisBack = document.getElementById("tardis2");
+				blueBack1 = document.getElementById("blueBackground1");
+				blueBack2 = document.getElementById("blueBackground2");
+				blueBack3 = document.getElementById("blueBackground3");
+				blueBack4 = document.getElementById("blueBackground4");
+				blueBack5 = document.getElementById("blueBackground5");
+				blueBack6 = document.getElementById("blueBackground6");
+				purpleBack1 = document.getElementById("purpleBackground1");
+				purpleBack2 = document.getElementById("purpleBackground2");
+				purpleBack3 = document.getElementById("purpleBackground3");
+				purpleBack4 = document.getElementById("purpleBackground4");
+				purpleBack5 = document.getElementById("purpleBackground5");
+				purpleBack6 = document.getElementById("purpleBackground6");
+			}
+			function audioStart()
+			{
+				libraryAudioElement.play();
+				libraryAudioElement.volume = 1.0;
+			}
+			function sequence(gallery)
+			{
+				//setTimeout(tardisNoiseOn(), 1000);
+				setTimeout(fadeAll(), 1000);
+				setTimeout(gallery, 1000);
+				tardisBack.style.opacity = "1";
+				//setTimeout(tardisNoiseOff(), 10000);
+				//setTimeout(displayNone(), 7000);
+			}
+			function fadeAll()
+			{
+				galaxyB.style.opacity = "0";
+				galaxyP.style.opacity = "0";
+				gallifreyPlanet.style.opacity = "0";
+				startBack.style.opacity = "0";
+				
+			}
+			function gallifreyGallery()
+			{
+				gallifreyBack.style.opacity = "1";
+				tardisHome.style.display = "none";
+			}
+			function blueGallery()
+			{
+				var ctr = parseInt(Math.random() * 6) + 1;
+				sourceString = "blueBackground" + ctr;
+				getDoc = document.getElementById(sourceString);
+				fadeAll();
+				getDoc.style.opacity = "1";
+				tardisHome.style.display = "none";
+			}
+			function purpleGallery()
+			{
+				var ctr = parseInt(Math.random() * 6) + 1;
+				sourceString = "purpleBackground" + ctr;
+				getDoc = document.getElementById(sourceString);
+				fadeAll();
+				getDoc.style.opacity = "1";
+				tardisHome.style.display = "none";			
+			}
+			function displayNone()
+			{
+				galaxyB.style.display = "none";
+				galaxyP.style.display = "none";
+				gallifreyPlanet.style.display = "none";
+				
+			}
+			function tardisNoiseOn()
+			{
+				tardisAudioElement.play();
+				stopTardis.style.display = "inline"
+				
+			}
+			function tardisNoiseOnSingular()
+			{
+				tardisAudioElement.play();
+			}
+			function tardisNoiseOff()
+			{
+				tardisAudioElement.pause();
+				stopTardis.style.display = "none"
+				displayNone();
+			}
+			function tardisNoiseOffSingular()
+			{
+				tardisAudioElement.pause();
+			}
+		</script>
+	</head>
+	<body onload = "initialize(); audioStart();">
+		<audio id = "libraryAudio" loop>
+			<source src="audio/librarySpace.mp3" type ="audio/mpeg">
+		</audio>
+		<audio id ="tardisAudio" loop>
+			<source src="audio/tardis.mp3" type ="audio/mpeg">
+		</audio>		
+		<img class = "mainBackground" id = "initial" src = "DoctorWho/background.jpg">
+		<img class = "mainBackground" id = "gallifreyBackground" src = "DoctorWho/gallifreyBackground.png"> 
+		<img class = "mainBackground" id = "blueBackground1" src = "DoctorWho/blue1.jpg"> 
+		<img class = "mainBackground" id = "blueBackground2" src = "DoctorWho/blue2.jpg"> 
+		<img class = "mainBackground" id = "blueBackground3" src = "DoctorWho/blue3.jpg"> 
+		<img class = "mainBackground" id = "blueBackground4" src = "DoctorWho/blue4.png"> 
+		<img class = "mainBackground" id = "blueBackground5" src = "DoctorWho/blue5.jpg"> 
+		<img class = "mainBackground" id = "blueBackground6" src = "DoctorWho/blue6.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground1" src = "DoctorWho/purple1.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground2" src = "DoctorWho/purple2.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground3" src = "DoctorWho/purple3.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground4" src = "DoctorWho/purple4.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground5" src = "DoctorWho/purple5.jpg"> 
+		<img class = "mainBackground" id = "purpleBackground6" src = "DoctorWho/purple6.jpg"> 
+		<span id = "container">
+			<a href = "main.html">	
+				<img onmouseover = "tardisNoiseOnSingular();" onmouseout = "tardisNoiseOffSingular();" id =  "tardis" src = "images/tardis.png"> 
+			</a>
+		</span>
+		<img onclick = "tardisNoiseOn(); sequence('gallifreyGallery()');" class = "planets" id = "gallifreyImage" src = "DoctorWho/gallifrey.png" width = "100" height = "100">
+		<img onclick = "tardisNoiseOn(); sequence('blueGallery()');" id = "galaxyBlue" src = "DoctorWho/galaxy1.gif">
+		<img onclick = "tardisNoiseOn(); sequence('purpleGallery()');" id = "galaxyPurple" src = "DoctorWho/galaxy2.gif">
+		<div class = "box">
+			<button id = "end" onclick = "tardisNoiseOff();"> Stop Tardis Noise </button>
+		</div>
+		<span id = "container2">
+			<a href = "DoctorWho.html">	
+				<img id = "tardis2" src = "images/tardis.png"> 
+			</a>
+		</span>
+	</body>
+	
+</html>

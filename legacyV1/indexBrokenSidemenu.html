@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title>Joey Jiemjitpolchai </title>
+		<link href=’https://fonts.googleapis.com/css?family=Merriweather&#8217;
+rel=’stylesheet’ type=’text/css’>
+		
+		<link type = "text/css" rel = "stylesheet" href = "css/indexCSS.css" />
+		<style> </style>
+		<script> 
+			function initialize()
+			{
+				
+				menuContainerBox = document.getElementById("menubox");
+				menuList = menuContainerBox.getElementsByClassName("menu");
+				boolArr = [];
+			}
+			
+			function toggleSubMenus(parentIdx, toggle, id)
+			{
+				for (var i = 0; i < boolArr.length; i++) {
+					if (boolArr[i] == id) 
+					{
+						toggle = false;
+						boolArr.splice(i,1);
+					}
+				}
+				if(toggle == true)
+				{
+					displayValue = 'list-item'
+					boolArr.push(id);
+				}
+				else
+				{
+					displayValue = 'none';
+				}
+				subList = menuList[parentIdx].getElementsByTagName("span");
+				for (var i =0; i < subList.length; i++)
+					subList[i].style.display = displayValue;
+				
+			}
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+		<h1 id = "header"> Joey Jiemjitpolchai </h1>
+		<div id = "accounts"> 
+			
+				<span class = "links"> || </span>
+				<a href = "https://github.com/gammaseeker" class = "links"> Code </a> 
+				<span class = "links"> || </span>
+			
+				<a href = "https://www.linkedin.com/in/joey-j-703686125/" class = "links"> Linkedin</a>
+				
+				<span class = "links"> || </span>
+		  
+				<span class = "links"> jjiemjitpolchai9540@bths.edu </span>
+			
+		</div>
+		<div id = "split"> </div>
+		<h1> A skinny kid with a funny name</h1>
+		<div id = "content">
+			Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
+			Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
+			Sample Text Sample Text Sample Text Sample 
+			Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text 
+			
+			
+		</div>
+		
+		<div id = "menubox"class="left">
+			<span>
+				<span class = "menu" onclick = "toggleSubMenus(0, true, 'award');"> <b>Awards</b>
+						<span class = "dropdown"> Science Olympiad </span>
+						<span class = "dropdown"> Educator's Award </span>
+						<span class = "dropdown"> Do the Write Thing </span>
+				</span></br>
+				<span class = "menu2"> <b>Blog </b></span></br>
+				<span class = "menu" onclick = "toggleSubMenus(1, true, 'career');"> <b>Career</b>
+						<span class = "dropdown"> Con Edison </span>
+						<span class = "dropdown"> Surpass Prep Center </span>
+				</span></br>
+				<span class = "menu" onclick = "toggleSubMenus(2, true, 'project');"> <b>Projects </b>
+					<span class = "dropdown"> Arduino Traffic Light Simulation </span>
+					<span class = "dropdown"> Drones Google Maps Application </span>
+					<span class = "dropdown"> Double Transposition Cipher </span>
+					<span class = "dropdown"> Web Development Fall Semester Final Project </span>
+				</span></br>
+				<span class = "menu2"> <b>Student </b></span>
+			</span>
+		</div>
+		
+	</body>
+	
+</html>
