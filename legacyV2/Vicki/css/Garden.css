@@ -1,0 +1,142 @@
+h1, h3
+{
+	text-align: center;
+	font-family: Century Gothic;
+}
+h1
+{
+	font-size: 48pt;
+	color: white;
+}
+h3
+{
+	color: #32628b;
+	font-size: 38pt;
+}
+.backgroundMain
+{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+	z-index: -999;	
+}
+.container
+{
+	text-align:center;
+	margin-top: 8%;
+}
+.botMenu
+{
+	padding-left: 100px;
+	padding-right: 100px;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;		
+}
+.mainMenu, #header, #subHead
+{
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;		
+
+}
+.footer
+{
+	position: fixed; 
+	bottom: 0; 
+	width:100%; 
+	text-align: center;	
+}
+.mainMenu
+{
+	font-family: Lucida Console;
+	font-size: 24pt;
+}
+#winterMenu, #winterBot, #winterA
+{
+	color: #adbce6;
+}
+#winterMenu:hover, #winterBot:hover
+{
+	color:white;
+	cursor: pointer;
+}
+#springMenu, #springBot, #springA
+{
+	color: #426f56;
+}
+#springMenu:hover, #springBot:hover
+{
+	color:white;
+	cursor: pointer;
+}
+#summerMenu, #summerBot, #summerA
+{
+	color: rgb(222,141,7);
+}
+#summerMenu:hover, #summerBot:hover
+{
+	color:white;
+	cursor: pointer;	
+}
+#fallMenu, #fallBot, #fallA
+{
+	color: #3e1310;
+}
+#fallMenu:hover, #fallBot:hover
+{
+	color:white;
+	cursor: pointer;	
+}
+#main
+{
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .5s;	
+}
+.backgroundSlide1
+{
+	/*position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -999;*/
+	display:none;
+	transition-property: display;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .5s;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .5s;
+	border-style:solid; /* dotted, dashed, solid, double, none, groove, ridge, inset, outset*/
+	border-width:thick; /* thin, medium, thick, measurement (px in cm)*/
+	border-color:black;
+	cursor: pointer;
+}
+.slideShowContainer
+{
+	display:none;
+	transition-property: display;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .5s;
+	text-align:center;
+	margin-top: 8%;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: .5s;
+}

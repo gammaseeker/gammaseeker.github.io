@@ -1,0 +1,33 @@
+h1
+{
+	font-family: Agency FB;
+	font-size: 48pt;
+	/*color: #C0C0C0;*/
+	color: #cccccc;
+}
+.backgroundImg
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+	z-index: -999;
+}
+body
+{
+	text-align: center;
+}
+#tardis
+{
+	height: 19%;
+	width: 19%;
+	transition: width 1s, height 1s;
+	-webkit-transition: width 2s, height 2s;
+}
+#tardis:hover
+{
+	width: 20.5%;
+	height: 20.5%;
+	cursor: pointer;
+}

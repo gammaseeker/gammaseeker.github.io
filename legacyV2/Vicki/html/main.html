@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Vicki's Tardis</title>
+		<link type = "text/css" rel = "stylesheet" href = "css/main.css" />
+		<style> </style>
+		<script>
+			function initialize()
+			{
+				libraryAudioElement = document.getElementById("libraryAudio");
+				menu1Element = document.getElementById("menu1"); 
+			}
+			function audioStart()
+			{
+				libraryAudioElement.play();
+				libraryAudioElement.volume = 1.0;
+			}
+			function hoverMenu(id, bool)
+			{
+				tempElement = document.getElementById(id);
+				if(bool == true)
+				{
+					tempElement.style.textShadow = "1px 1px 2px white, 0 0 25px white, 0 0 5px white";
+				}
+				else
+				{
+					tempElement.style.textShadow = "4px 4px 4px #000000";
+				}
+				
+			}
+		</script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery.interactive_bg.js"></script>	
+	</head>
+	<body onload = "initialize(); audioStart();">
+		<div class="bg" data-ibg-bg="images/bg.png"></div>
+		<audio id = "libraryAudio" loop>
+			<source src="audio/librarySpace.mp3" type ="audio/mpeg">
+		</audio>
+
+		<script type="text/javascript">
+        $(".bg").interactive_bg();
+		</script>
+		<h1 onmouseover = "hoverMenu('greet', true);" onmouseout = "hoverMenu('greet', false)" id = "greet"> Welcome Home!</h1>
+		<!--<a href = "CriminalMinds.html"><div class = "menus" onmouseover = "hoverMenu('menu1', true);" onmouseout = "hoverMenu('menu1', false);"id = "menu1"> Criminal <span>Minds</span> </div></a>-->
+		<a href = "DoctorWho.html"><div class = "menus" onmouseover = "hoverMenu('menu2', true);" onmouseout = "hoverMenu('menu2', false);"id = "menu2"> Doctor Who </div></a>
+		<!--<a href = "TeenWolf.html"><div class = "menus" onmouseover = "hoverMenu('menu3', true);" onmouseout = "hoverMenu('menu3', false);"id = "menu3"> Teen Wolf </div></a>-->
+		<a href = "Garden.html"><div class = "menus" onmouseover = "hoverMenu('menu3', true);" onmouseout = "hoverMenu('menu3', false);"id = "menu3"> Garden </div></a>
+		<a href = "Maps.html"><div class = "menus" onmouseover = "hoverMenu('menu5', true);" onmouseout = "hoverMenu('menu5', false);"id = "menu5"> Urban Jungle </div></a>
+
+	</body>
+	
+</html>

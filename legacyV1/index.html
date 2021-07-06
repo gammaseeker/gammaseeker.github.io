@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title>Joey Jiemjitpolchai </title>
+		<link href=’https://fonts.googleapis.com/css?family=Merriweather&#8217;
+rel=’stylesheet’ type=’text/css’>
+		
+		<link type = "text/css" rel = "stylesheet" href = "css/indexCSS.css" />
+		<style> </style>
+		<script> 
+			function initialize()
+			{
+				itmMaster = document.getElementsByClassName("itm");
+				menuContainerBox = document.getElementById("menubox");
+				menuList = menuContainerBox.getElementsByClassName("menu");
+				boolArr = [];
+			}
+			
+			function toggleSubMenus(parentIdx, displayValue)
+			{
+				subList = menuList[parentIdx].getElementsByTagName("span");
+				for (var i =0; i < subList.length; i++)
+					subList[i].style.display = displayValue;
+				
+			}
+			function revealContent(contentId)
+			{
+				disableAllItm();
+				document.getElementById(contentId).style.display = "block";
+			}
+			function disableAllItm()
+			{
+				for(var i = 0; i < itmMaster.length; i++)
+				{
+					itmMaster[i].style.display = "none";
+				}
+			}
+		</script>
+	</head>
+	<body onload = "initialize();" style = "height: 100%;">
+		<img class = "backgroundMain" id = "main" src = "background/black.jpg">	
+		<div id = "containLeft">
+			<div id = "menubox"class="left">
+				<span>
+					<img onclick = "revealContent('item-reset');" class = "btn" src = "images/thumbnail.png">
+					<span class = "menu" onmouseover = "toggleSubMenus(0, 'list-item');" onmouseout = "toggleSubMenus(0, 'none');"> <b>Awards</b></br>
+							<span class = "dropdown" onclick = "revealContent('item-gold');">Gold Medal Software Engineering </span>
+							<span class = "dropdown" onclick = "revealContent('item-alum');">Alumni Foundation Service </span>
+							<span class = "dropdown" onclick = "revealContent('item-sci');"> Science Olympiad </span>
+							<span class = "dropdown" onclick = "revealContent('item-ed');"> Educator's Award </span>
+							<span class = "dropdown" onclick = "revealContent('item-dwt');"> Do the Write Thing </span>
+					</span></br>
+					<a id = "blog" href = "blog.html">	<span class = "menu2"> <b>Blog </b></br></span></br></a>
+					<span class = "menu" onmouseover = "toggleSubMenus(1, 'list-item');" onmouseout = "toggleSubMenus(1, 'none');"> <b>Career</b></br>
+							<span class = "dropdown" onclick = "revealContent('item-bloomberg');"> Bloomberg L.P. </span>
+							<span class = "dropdown" onclick = "revealContent('item-alumni');"> Brooklyn Tech Alumni Foundation </span>
+							<span class = "dropdown" onclick = "revealContent('item-coned');"> Con Edison </span>
+							<span class = "dropdown" onclick = "revealContent('item-surp');"> Surpass Prep Center </span>
+					</span></br>
+					<span class = "menu" onmouseover = "toggleSubMenus(2, 'list-item');" onmouseout = "toggleSubMenus(2, 'none');"> <b>Projects </b></br>
+						<!-- <span class = "dropdown" onclick = "revealContent('item-ar');"> Arduino Traffic Light Simulation </span> -->
+						<span class = "dropdown" onclick = "revealContent('item-gmap');"> Drones Google Maps Application </span>
+						<span class = "dropdown" onclick = "revealContent('item-dts');"> Double Transposition Cipher </span>
+						<span class = "dropdown" onclick = "revealContent('item-gp');"> Green Planet </span>
+					</span></br>
+					<span class = "menu2" onclick = "revealContent('item-std');"> <b>Student </b></br></span>
+				</span>
+			</div>
+		</div>
+		<div id = "top">
+			<h1 id = "header"> Joey Jiemjitpolchai </h1>
+			<div id = "codeDiv"> <a href = "https://github.com/gammaseeker" id = "code" class = "links"> Code </a> </div>
+			<div id = "linkedinDiv"> <a href = "https://www.linkedin.com/in/joey-j-703686125/" id = "linkedin" class = "links"> LinkedIn</a> </div>
+			<div id = "email"class = "links"> joeyjiem@gmail.com </div>
+			<div id = "split"> </div>
+			<h1> A kid who really likes computers</h1>
+		</div>
+		<div id = "content"> 
+			<item class = "itm" id = "item-gold" style="display: none"> 
+					Received the title of regent for the Software Engineering Major at Brooklyn Tech	
+			</item>
+			<item class = "itm" id = "item-alum" style="display: none"> 
+					<span id = "awardWrapper">Recognized for service to the Brooklyn Tech Alumni Foundation. </br></span>
+					<img id = "awdImg" src = "images/awards.jpg">
+			</item>
+			<item class = "itm" id = "item-sci" style="display: none"> 
+				The Brooklyn Tech High School Science Olympiad team won 2nd place at the regional competition. 
+				I won a 2nd place individual medal in the Wind Power competition. (Winter 2017)</br>
+				<img id = "sciImg"src = "images/sciOly.jpg"> 
+			</item>
+			<item class = "itm" id = "item-ed" style="display: none"> 
+				Won the Educator's Award at the CS4All Hackathon for creating a game that supplies the players with the tools necessary to resolve a bullying situation. (Summer 2016).</br>
+				<div class = "galleryContainer" id = "cs4AllContainer">
+					<img class = "cs4All" src = "images/cs4All1.jpg">
+					<img class = "cs4All" src = "images/cs4All2.jpg">
+					<img class = "cs4All" src = "images/cs4All3.jpg">
+					<img class = "cs4All" src = "images/cs4All4.jpg">
+				</div>
+				
+				
+			</item>
+			<item class = "itm" id = "item-dwt" style="display: none"> 
+				New York State Regional Winner for the Do the Write Thing non-violence essay challenge. (Summer 2013).</br>
+				<div class = "galleryContainer">
+					<img id = "dwt" src = "images/dwt.jpg">
+					<img id = "dwt" src = "images/dwt2.jpg">
+				</div>
+				
+			</item>
+			<item class = "itm" id = "item-bloomberg" style = "display:none">
+				Over the summer of 2017, I was a software engineer intern at Bloomberg L.P.
+				I will be returning for the summer of 2018.
+				<div class = "galleryContainer">
+					<img class = "bb" src = "images/lights.jpg">
+					<img class = "bb" src = "images/d1.png">
+					<img class = "bb" src = "images/b2.jpg">
+				</div>
+			</item>
+			<item class = "itm" id = "item-alumni" style = "display:none">
+				I was an assistant research analyst for the Brooklyn Tech Alumni Foundation. I have taken the initiative to develop a system to digitalize all the office paperwork. My responsibilities include modernizing a legacy database, and maintaining it. (Winter 2017).
+				<div class = "galleryContainer">
+					<img id = "al1" src = "images/alumni.jpg">
+				</div>
+			</item>
+			<item class = "itm" id = "item-coned" style="display: none"> 
+				I interned at Con Edison over the summer of 2016 and senior year 2017. I created and maintained functional data reports through Tableau. 
+				Refer to my blog post about the personal impact this experience had on me.(Summer 2016).</br>
+				<div class = "galleryContainer">
+					<img id = "ce1" src = "images/conEd.jpg" >
+					<img id = "ce2" src = "images/conEd2.jpg" >
+					<img id = "ce3" src = "images/conEd3.jpg" >
+				</div>
+				
+			</item>
+			<item class = "itm" id = "item-surp" style="display: none"> 
+				I supervised classes of 20-30 middle school students in math and English. (Summer 2014).</br>
+			</item>
+			<!-- <item class = "itm" id = "item-ar" style="display: none">
+				I am currently learning how to use an Arduino. The Traffic Light Simulator will be my first project showcasing my skills with an Arduino.
+			</item> -->
+			<item class = "itm" id = "item-gmap" style="display: none">
+				The Application I made implements the Google Maps API in order to show the user where it is recommended, legal, semi-legal, 
+				and illegal to fly a drone in certain cities. This project showcases my prowess as a backend developer as majority of the code comprises of JavaScript and PHP. The code can be found <a href = "https://github.com/gammaseeker/Drone-Google-Maps-Application">on Github. </a> (Spring 2016).
+				<img id = "gm" src = "images/gm.jpg">
+			</item>
+			<item class = "itm" id = "item-dts" style="display: none"> 
+				While studying cryptography, I created the Double Transposition Cipher in the block language Snap! The project can be found 
+				<a href = "http://snap.berkeley.edu/snapsource/snap.html#present:Username=gammaseeker&ProjectName=Double%20Transposition"> here.</a> (Winter 2015). </br>
+				<img id = "dts" src = "images/dts.jpg">
+			</item>
+			<item class = "itm" id = "item-gp" style="display: none"> 
+				Green Planet is the name of the website I created with a friend for our Fall semester final project in our Web Development class. This project showcases my prowess in CSS and web design. The website can be seen in action <a href = "https://gammaseeker.github.io/Fall%20Final%20Project/Index.html"> here. </a> The code can be found 
+				<a href = "https://github.com/gammaseeker/Fall-Final-Project-2015">on Github.</a> (Fall 2015).</br>
+				<img id = "gp" src = "images/gp.jpg">
+			</item>
+			<item class = "itm" id = "item-std" style="display: none"> 
+				<!--I am currently a senior at Brooklyn Technical High School in the Software Engineering Major. I aspire to major in Computer Science. 
+				To assist my journey I have taken Web Development, AP Computer Science Principles, Database SQL, AP BC Calculus and AP Computer Science Java.-->
+				I am currently a freshman at Stony Brook University, majoring in computer science. 
+				I have taken Web Development, AP Computer Science Principles, Database SQL, AP BC Calculus 
+				and AP Computer Science A in high school. I am currently taking Honors Discrete Math and 
+				Linear Algebra. My knowledge of programming languages and technologies extends to 
+				HTML, CSS, Javascript, Ruby, Java, Python, C++, and Cilk+
+				</br>
+				<img id = "ce4" src = "images/conEd4.jpg" >
+			
+			</item>
+			<item class = "itm" id = "item-reset" style="display: none">
+			
+			</item>
+		</div>
+		
+		
+	</body>
+	
+</html>

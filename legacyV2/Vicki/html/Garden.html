@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!-- Joey Jiemjitpolchai -->
+<html> 
+	<head> 
+		<title> Relax and Breathe </title>
+		<link type = "text/css" rel = "stylesheet" href = "css/Garden.css" />
+		<style> </style>
+		<script>
+			function initialize() //Figure out how to display images
+			{
+				WINTER = 1;	
+				mainBack = document.getElementById("main");
+				head = document.getElementById("header");
+				subHeader = document.getElementById("subHead");
+				winterShow = document.getElementById("slideshowWinter");
+				winterBack1 = document.getElementById("winterBackground1");
+				winterBack2 = document.getElementById("winterBackground2");
+				winterBack3 = document.getElementById("winterBackground3");
+				winterBack4 = document.getElementById("winterBackground4");
+				winterBack5 = document.getElementById("winterBackground5");
+				botWinter = document.getElementById("winterBot");
+				botSpring = document.getElementById("springBot");
+				botSummer = document.getElementById("summerBot");
+				botFall = document.getElementById("fallBot");
+				mainWinter = document.getElementById("winterMenu");
+				mainSpring = document.getElementById("springMenu");
+				mainSummer = document.getElementById("summerMenu");
+				mainFall = document.getElementById("fallMenu");
+			}
+		</script>
+	</head>
+	<body onload = "initialize();"> 
+		<h1 id = "header"> Relax and Breathe</h1>
+		<img class = "backgroundMain" id = "main" src = "images/gardenBack.gif">
+		<h3 id = "subHead"> Which season?</h3>
+		<div class = "container">
+			<a id = "winterA"href = "winterSlide.html"><div class = "mainMenu" id = "winterMenu"> Winter </div> </a> 
+			<a id = "springA"href = "springSlide.html"><div class = "mainMenu" id = "springMenu"> Spring </div> </a>
+			<a id = "summerA"href = "summerSlide.html"><div class = "mainMenu" id = "summerMenu"> Summer </div> </a>
+			<a id = "fallA" href = "fallSlide.html"><div class = "mainMenu" id = "fallMenu"> Fall </div> </a>
+		</div>
+		<div class = "footer">
+			<span id = "winterBot" class = "botMenu" onclick = "sequenceWinter();"> Winter </span> 
+			<span id = "springBot" class = "botMenu"> Spring </span> 
+			<span id = "summerBot" class = "botMenu"> Summer </span> 
+			<span id = "fallBot" class = "botMenu"> Fall </span>
+		</div>
+	</body>
+	
+</html>

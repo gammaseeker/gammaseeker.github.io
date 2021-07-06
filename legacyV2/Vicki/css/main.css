@@ -1,0 +1,67 @@
+.bg
+{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	min-width: 1024px;
+	z-index: -999;
+}
+h1
+{
+	font-family:Lucida Console;
+	color:#d9d9d9;
+	font-size: 48pt;
+	position:fixed;
+	left:40%;
+}
+.menus
+{
+	font-family: Lucida Console;
+	font-size: 36pt;
+	text-shadow: 4px 4px 4px #000000;
+
+}
+#menu2
+{
+	position: fixed;
+	top: 25%;
+	left: 26%;
+	color: #32628b;
+}
+#menu1
+{
+	position: fixed;
+	top: 52%;
+	left: 15%;
+	color: white;
+}
+span
+{
+	color: red;
+}
+#menu4
+{
+	position: fixed;
+	top: 52%;
+	left: 68%;
+	
+}
+#menu3
+{
+	position: fixed;
+	top:25%;
+	left:68%;
+	/*color:white;*/
+	color:#00ff00;
+}
+#menu5
+{
+	color: #a6a6a6;
+	position:fixed;
+	top: 60%;
+	left:43%;
+	
+}
